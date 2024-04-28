@@ -1,0 +1,124 @@
+/* Unset */
+
+.unset {
+  font-size: unset;
+  font-weight: unset;
+  line-height: unset;
+}
+
+.unset-size {
+  font-size: unset;
+}
+
+.unset-weight {
+  font-weight: unset;
+}
+
+.unset-lh {
+  line-height: unset;
+}
+
+/* Font styles */
+
+.mono {
+  font-family: ui-monospace, 
+             Menlo, Monaco, 
+             "Cascadia Mono", "Segoe UI Mono", 
+             "Roboto Mono", 
+             "Oxygen Mono", 
+             "Ubuntu Monospace", 
+             "Source Code Pro",
+             "Fira Mono", 
+             "Droid Sans Mono", 
+             "Courier New", monospace;
+  font-size: 0.975em;
+  letter-spacing: 0;
+}
+
+/* Links */
+
+.no-ul {
+  text-decoration: none;
+  transition: none;
+}
+
+.hide-ul {
+  text-decoration: none;
+  transition: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Text other */
+
+.disabled, .subdued {
+  color: var(--gray-10);
+}
+
+p.shadow,
+a.shadow,
+h1.shadow,
+h2.shadow,
+h3.shadow,
+h4.shadow
+h5.shadow {
+  text-shadow: var(--text-shadow);
+}
+
+/* Images and videos */
+
+.no-shadow {
+  box-shadow: none;
+}
+
+/* Alignment */
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+  .center p {
+    text-align: left;
+  }
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* Color backgrounds */
+
+.lumi {
+  background-color: var(--lumi-thumb)!important;
+}
+
+.dark {
+  background-color: var(--dark-bgd)!important;
+}
+
+.blue {
+  background-color: #C3CDD0!important
+}
+
+.purple {
+  background-color: #C4B1C8!important
+}
+
+.green {
+  background-color: #CDD4BF!important
+}

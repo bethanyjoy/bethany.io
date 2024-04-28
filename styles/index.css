@@ -1,0 +1,64 @@
+/* Center content + set page width */
+
+main > * {
+  width: calc(100% - (var(--space-m-xl) * 2));
+  max-inline-size: var(--measure);
+}
+
+/* Intro styles */
+
+.intro a.inline {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Switcher */
+
+.switcher {
+
+  & > * {
+    flex-basis: calc((var(--measure) - 100%));
+    flex-grow: 1;
+  }
+
+  &:nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .stack {
+    min-width: 24ch;
+  }
+
+  .thumbnail { 
+    background-color: var(--gray-3);
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    max-height: 35ch;
+
+    & img {
+      object-position: 0 0;
+      object-fit: cover;
+      width: 62%;
+      height: 100%;
+      margin: 15% auto 0;
+      transition: transform 0.5s;
+      max-width: 25ch;
+    }
+
+    &:hover img {
+      transform: translateY(-1%) scale(101%);
+    }
+
+    &.lumi {
+      background-color: var(--lumi-thumb);
+    }
+    &.pop-in {
+      background-color: var(--pop-in-thumb);
+    }
+    &.scout {
+      background-color: var(--wine-thumb);
+    }
+  }
+
+}

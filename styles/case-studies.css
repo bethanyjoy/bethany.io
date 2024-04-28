@@ -1,0 +1,9 @@
+h1 {
+	margin-block-end: var(--space-2xs);
+}
+
+main > header {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+

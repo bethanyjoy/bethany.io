@@ -1,0 +1,221 @@
+/* Global styles */
+
+:root {
+  font-size: 1rem;
+  font-family: Inter, system-ui, 
+             -apple-system, BlinkMacSystemFont, 
+             "Segoe UI", 
+             "Roboto", 
+             "Oxygen", 
+             "Ubuntu", 
+             "Cantarell", 
+             "Fira Sans", 
+             "Droid Sans", 
+             "Helvetica Neue", 
+             Arial, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+/* Custom variables */
+
+:root {
+
+  /* Spacing */
+  --gutter: var(--space-m-3xl);
+  --gutter-small: var(--space-m-l);
+  --gap: var(--space-s-2xl);
+  --gap-small: var(--space-s-xl);
+  --page-spacing: var(--space-xl-3xl);
+  --page-spacing-small: var(--space-l-2xl);
+  --page-spacing-xsmall: var(--space-m-xl);
+
+  /* Colors */
+  --shadow-value: 0, 0, 0;
+  --shadow-value-lumi: 61, 56, 44;
+
+  --measure: 820px;
+}
+
+
+/* Set default styles */
+
+body {
+  background-color: var(--background);
+  color: var(--gray-12);
+  font-size: var(--step-0);
+}
+
+/* Center content + set page width */
+
+main > *,
+header,
+footer {
+  margin: auto;
+}
+
+header,
+footer {
+  width: calc(100% - (var(--space-m-xl) * 2));
+  max-inline-size: var(--measure);
+}
+
+/* Add spacing between page content */
+
+main > * + * {
+  margin-block-start: var(--space-xl-2xl);
+}
+
+header {
+  margin-block-start: var(--space-m-l);
+  margin-block-end: var(--space-xl);
+}
+
+footer {
+  margin-block-end: var(--space-l-xl);
+  margin-block-start: var(--space-2xl-3xl);
+}
+
+/* Header */
+
+nav {
+  flex-shrink: 1;
+  gap: var(--space-s);
+  align-items: center;
+}
+
+/* Remove top margins */
+
+p:first-child, h1, h2, h3, h4, h5 {
+  margin-block-start: 0;
+}
+
+/* Type styles */
+
+/*h1, h2, h3, h4, h5, .heavy {
+  font-weight: 450;
+}*/
+
+.h1, h1 {
+  font-size: var(--step-4);
+  font-weight: 550;
+}
+
+.h2, h2 {
+  font-size: var(--step-3);
+  font-weight: 550;
+}
+
+.h3, h3 {
+  font-size: var(--step-1);
+  font-weight: 550;
+}
+
+.h4, h4 {
+  font-size: var(--step-0);
+  font-weight: 450;
+}
+
+/*.h5, h5 {
+  font-size: var(--step-0);
+}*/
+
+p, li {
+  color: var(--gray-11);
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  &.large, &.medium {
+    color: unset;
+    line-height: 1.4;
+/*    -webkit-font-smoothing: unset;*/
+  }
+  &.large {
+    font-size: var(--step-3);
+/*    line-height: 145%;*/
+  }
+  &.medium {
+    font-size: var(--step-2);
+  }
+}
+
+.heavy {
+  color: unset;
+  -webkit-font-smoothing: unset;
+}
+
+/* Link styles */
+
+a {
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.07em;
+  text-decoration-color: var(--gray-7);
+  color: currentColor;
+  transition: text-decoration-color 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+/* Ghost button */
+
+.ghost-button {
+  text-decoration-line: none;
+  padding: 0.2em 0.5em;
+  border-radius: 0.4em;
+  transition: background-color 0.25s;
+  &:hover {
+    background-color: var(--gray-a3);
+  }
+}
+
+/* Dark mode toggle button */
+
+.btn-toggle {
+  height: 24px;
+  & svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .hover {
+    display: none;
+  }
+  &:hover {
+    .default {
+      display: none;
+    }
+    .hover {
+      display: block;
+    }
+  }
+}
+
+/* Links */
+
+[rel=external].arrow::after {
+  content: " ↗";
+  display: inline-block;
+  text-decoration-line: none;
+  margin-inline-start: 0.25em;
+}
+
+a.back {
+  text-underline-offset: 0.25rem;
+  &::before {
+    content: "← ";
+    display: inline-block;
+    text-decoration-line: none;
+    margin-inline-end: 0.25em;
+  }
+}

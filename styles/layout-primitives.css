@@ -1,0 +1,63 @@
+/* Cluster */
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--space-s);
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.small {
+    gap: var(--space-2xs);
+  }
+}
+
+/* Repel */
+
+.repel {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-xs);
+}
+
+/* Stack */
+
+.stack {
+
+  > * + * {
+    margin-block-start: var(--space-m);
+  }
+
+  &.small > * + * {
+    margin-block-start: var(--space-xs);
+  }
+  
+}
+
+/* Switcher */
+
+.switcher {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: center;
+  
+}
+
+
+
+/*.split {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: center;
+  justify-content: space-between;
+
+}*/
