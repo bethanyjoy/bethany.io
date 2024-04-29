@@ -1,6 +1,7 @@
 .prose {
 
 	padding-inline:0;
+	overflow-x: hidden;
 
 	/* Layout */
 
