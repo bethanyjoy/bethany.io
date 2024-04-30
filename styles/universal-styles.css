@@ -194,7 +194,7 @@ a {
     text-decoration-color: currentColor;
   }
 
-  &:is(p.large > *){
+  &:is(p.xlarge > *){
     font-weight: 600;
     text-underline-offset: 0.125em;
     text-decoration-thickness: 0.04em;
