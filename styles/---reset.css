@@ -84,6 +84,11 @@ p, figure, dl {
   margin-block-start: 0;
 }
 
+figure {
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
 dd {
   margin-inline-start: 0;
 }

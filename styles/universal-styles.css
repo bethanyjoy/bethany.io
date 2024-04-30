@@ -27,20 +27,14 @@
 
 :root {
 
-  /* Spacing */
-  --gutter: var(--space-m-3xl);
-  --gutter-small: var(--space-m-l);
-  --gap: var(--space-s-2xl);
-  --gap-small: var(--space-s-xl);
-  --page-spacing: var(--space-xl-3xl);
-  --page-spacing-small: var(--space-l-2xl);
-  --page-spacing-xsmall: var(--space-m-xl);
+  /* Layout & spacing */
+  --measure: 820px;
+  --gutter: var(--space-m-l);
 
   /* Colors */
   --shadow-value: 0, 0, 0;
   --shadow-value-lumi: 61, 56, 44;
 
-  --measure: 820px;
 }
 
 
@@ -64,9 +58,10 @@ footer {
   margin: auto;
 }
 
+main > *:not(.prose), 
 header,
 footer {
-  width: calc(100% - (var(--space-m-xl) * 2));
+  width: calc(100% - (var(--gutter) * 2));
   max-inline-size: var(--measure);
 }
 
@@ -86,12 +81,37 @@ footer {
   margin-block-start: var(--space-2xl-3xl);
 }
 
+/* Page header styles for non-index pages */
+
+h1 {
+  margin-block-end: var(--space-2xs);
+}
+
+main > header {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Custom spacing below header on about page */
+
+.about {
+  & main > header {
+      margin-block-end: var(--space-l);
+  }
+  & main > * + * {
+      margin-block-start: var(--space-l);
+  }
+}
+
 /* Header */
 
 nav {
-  flex-shrink: 1;
-  gap: var(--space-s);
-  align-items: center;
+  gap: var(--space-2xs)!important;
+  align-items: baseline;
+}
+
+.logo {
+  font-size: 1.0125em;
 }
 
 /* Remove top margins */
@@ -138,17 +158,23 @@ p, li {
 }
 
 p {
-  &.large, &.medium {
+  &.xlarge, &.large, &.medium {
     color: unset;
     line-height: 1.4;
 /*    -webkit-font-smoothing: unset;*/
   }
-  &.large {
+  &.xlarge {
     font-size: var(--step-3);
 /*    line-height: 145%;*/
   }
-  &.medium {
+  &.large {
     font-size: var(--step-2);
+  }
+  &.medium {
+    font-size: var(--step-1);
+  }
+  &.small {
+    font-size: var(--step--1);
   }
 }
 
@@ -160,9 +186,9 @@ p {
 /* Link styles */
 
 a {
-  text-underline-offset: 0.3rem;
+  text-underline-offset: 0.2em;
   text-decoration-thickness: 0.07em;
-  text-decoration-color: var(--gray-7);
+  text-decoration-color: var(--gray-a6);
   color: currentColor;
   transition: text-decoration-color 0.5s;
   cursor: pointer;
@@ -170,6 +196,13 @@ a {
   &:hover {
     text-decoration-color: currentColor;
   }
+
+  &:is(p.large > *){
+    font-weight: 600;
+    text-underline-offset: 0.125em;
+    text-decoration-thickness: 0.04em;
+  }
+
 }
 
 /* Ghost button */
@@ -188,6 +221,7 @@ a {
 
 .btn-toggle {
   height: 24px;
+  margin-inline-start: var(--space-2xs);
   & svg {
     width: 1.5rem;
     height: 1.5rem;

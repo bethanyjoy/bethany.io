@@ -148,37 +148,37 @@ body.dark-theme {
 
 body {
 
-  --background: #ffffff;
+  --background: rgb(255, 255, 255);
+  --index-link-bgd: rgba(255, 255, 255, 0.4);
 
   /* Project colors */
   --lumi-thumb: rgb(237, 231, 219);
   --lumi-hero: rgba(237, 231, 219);
-  --wine-thumb: rgb(244, 233, 202);
+  --scout-thumb: rgb(244, 233, 202);
   --pop-in-thumb: rgb(224, 232, 210);
 
   /* Case study colors */
   --alpha-bgd: var(--black-a1);
   --gray-bgd: var(--black-a1);
   --dark-bgd: var(--black-a10);
-  --index-link-background: rgba(251, 249, 244, 0.4);
   --border: var(--gray-5);
 }
 
 body.dark-theme {
 
-  --background: #222222;
+  --background: rgb(34, 34, 34);
+  --index-link-bgd: rgba(34, 34, 34, 0.4);
 
   /* Project colors */
   --lumi-thumb: rgb(128, 117, 97);
   --lumi-hero: rgba(128, 117, 97, 0.8);
-  --wine-thumb: rgb(87, 85, 61);
+  --scout-thumb: rgb(87, 85, 61);
   --pop-in-thumb: rgb(61, 78, 57);
 
   /* Case study colors */
   --alpha-bgd: var(--white-a1);
   --gray-bgd: var(--white-a11);
   --dark-bgd: var(--white-a1);
-  --index-link-background: rgba(34, 34, 34, 0.4);
   --border: var(--gray-6);
 }
 
@@ -186,37 +186,37 @@ body.dark-theme {
   /* Defaults to dark theme */
   body {
 
-    --background: #222222;
+    --background: rgb(34, 34, 34);
+    --index-link-bgd: rgba(34, 34, 34, 0.4);
 
     /* Project colors */
     --lumi-thumb: rgb(128, 117, 97);
     --lumi-hero: rgba(128, 117, 97, 0.8);
-    --wine-thumb: rgb(87, 85, 61);
+    --scout-thumb: rgb(87, 85, 61);
     --pop-in-thumb: rgb(61, 78, 57);
 
     /* Case study colors */
     --alpha-bgd: var(--white-a1);
     --gray-bgd: var(--white-a11);
     --dark-bgd: var(--white-a1);
-    --index-link-background: rgba(34, 34, 34, 0.4);
     --border: var(--gray-6);
   }
 
   body.light-theme {
 
-    --background: #ffffff;
+    --background: rgb(255, 255, 255);
+    --index-link-bgd: rgba(255, 255, 255, 0.4);
 
     /* Project colors */
     --lumi-thumb: rgb(237, 231, 219);
     --lumi-hero: rgba(237, 231, 219);
-    --wine-thumb: rgb(244, 233, 202);
+    --scout-thumb: rgb(244, 233, 202);
     --pop-in-thumb: rgb(224, 232, 210);
 
     /* Case study colors */
     --alpha-bgd: var(--black-a1);
     --gray-bgd: var(--black-a1);
     --dark-bgd: var(--black-a10);
-    --index-link-background: rgba(251, 249, 244, 0.4);
     --border: var(--gray-5);
   }
 }

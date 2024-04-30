@@ -1,0 +1,13 @@
+/* Set up GT Flexa */
+
+@font-face {
+  font-family: GT-Flexa;
+  src: url("../fonts/GT-Flexa-Light-Trial.otf") format("opentype"), url("../fonts/GT-Flexa-Light-Trial.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: GT-Flexa;
+  src: url("../fonts/GT-Flexa-Regular-Trial.otf") format("opentype"), url("../fonts/GT-Flexa-Regular-Trial.woff2") format("woff2");
+  font-weight: 400;
+}

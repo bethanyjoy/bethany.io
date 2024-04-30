@@ -1,98 +1,227 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
   <head>
     <meta charset="utf-8" />
-    <title>Bethany Nuechterlein</title>
+    <title>About Me · Bethany Nuechterlein</title>
     <meta name="viewport" content="width=device-width" />
     <meta name="color-scheme" content="light dark">
     <meta name="description" content="Product designer & fledgling developer based in Los Angeles, CA" />
-    <!-- <script type="module" rel="modulepreload" src="https://unpkg.com/dark-mode-toggle" crossorigin></script> -->
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="styles/--reset.css">
-    <!-- <link rel="stylesheet" href="styles/colors.css"> -->
-    <!-- <link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
-    <link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)"> -->
+    <link rel="stylesheet" href="styles/---reset.css">
+    <link rel="stylesheet" href="styles/--size-space.css">
+    <link rel="stylesheet" href="styles/--colors.css">
     <link rel="stylesheet" href="styles/universal-styles.css">
     <link rel="stylesheet" href="styles/layout-primitives.css">
+    <link rel="stylesheet" href="styles/prose.css">
     <link rel="stylesheet" href="styles/utility-classes.css">
   </head>
-  <body class="home">
+
+  <body class="about">
+
     <header class="repel">
-      <a href="index.html" aria-current="page"><h1 class="unset logo">Bethany Nuechterlein</h1></a>
-      <nav class="cluster mono row-reverse">
-        <a href="#" aria-current="page" class="ghost-button">About</a>
-        <a href="index.html" class="ghost-button">Work</a>
+      <a class="no-ul logo" href="index.html">Bethany</a>
+      <nav class="cluster mono">
+        <a href="about.html" aria-current="page" class="ghost-button">About</a>
+        <a href="index.html#work" class="ghost-button">Work</a>
+        <a class="btn-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path class="default" d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z"></path>
+            <path class="hover" d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z"></path>
+          </svg>
+        </a>
       </nav>
     </header>
+
     <main>
-      <section class="intro">
-        <p class="large constrain">I’m a product designer & fledgling developer based in Los Angeles, CA. I have over 10 years of experience designing and launching products.</p>
-        <p class="large constrain">I’m currently freelancing and tinkering on my side project <a href="https://scout.wine" rel="external" class="text-link">Scout</a>. Previously I was the founding product designer at <a href="http://www.lumi.com" rel="external" class="text-link">Lumi</a>.</p>
-        <p class="large">I’m currently open to work 👋.</p>
-      </section>
-      <section class="case-studies lumi" id="work">
-        <section class="switcher lumi">
-          <!-- <a href="#" class="thumbnail">
-            <img src="assets/lumi-phone-mockup@2x.png" width="810" height="1684">
-          </a> -->
-          <div class="thumbnail">
-            <img src="assets/lumi-phone-mockup@2x.png" width="810" height="1684">
+
+      <header>
+        <h1>About Me</h1>
+        <p class="medium">Design sensbilities + a logic driven mind</p>
+        <!-- <p class="medium">As life-long puzzle enthusiast, I love tackling problems. Whether that's creating an intuitive interface for a workflow or a scalable design system, I'm your girl.</p> -->
+      </header>
+
+      <div class="prose">
+
+        <!-- <p class="medium">As a life-long puzzle enthusiast, I love tackling problems. Whether that's creating an intuitive interface for a workflow or a scalable design system, I'm your girl.</p> -->
+
+        <p>As life-long puzzle enthusiast, I love tackling complex problems. Whether that's creating an intuitive interface for a complex workflow or a scalable design system, I've got you covered.</p>
+
+        <!-- <p>I was drawn to coding from an early age. Back in the 90s my father, a software engineer, built me  -->
+
+
+
+<!--         <p class="medium">When I'm not working I like to do activities that make me feel connected to the physical world. I love exploring the natural beauty of California. I recently backpacked across the channel isalnds and climbed to the top of half-dome. I also love use a pottery wheel and gardening in my yard.</p>
+
+        <p class="medium">When I'm not working I like exploring the wilderness  -->
+
+        <h3>Hobbies & Interests</h3>
+
+        <p>When I'm not working I like to disconnect from technology and connect with the physical world. Often this means hiking in the Angeles Forest or exploring one of the many scenic parks throughout California.</p>
+
+        <p>I also like to dabble with pottery, I find it medititative to play with form on the wheel and it's so satisfying to turn a ball of clay into a usable object.</p>
+
+        <p>I'm also an avid reader. I'm currently reading "When We Cease to Understand the World" by Benjamin Laboutat, a non-fiction book about the toll of scientific progress on those who acheive it.</p>
+
+        <div class="two-col">
+
+          <figure>
+            <img src="assets/half-dome.jpeg">
+            <figcaption><p><strong>Adventures.</strong> Me after climbing the cables at Half Dome.</p></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/cats.jpeg">
+            <figcaption><p><strong>Cats.</strong> My 3 rescues Scout, Goose, and Sweet Pea.</p></figcaption>
+          </figure>
+
+          <figure>
+            <video playsinline muted autoplay loop preload="auto" class="ratio-3-4">
+              <source src="assets/biking-beach.mp4" type="video/mp4">
+            </video>
+            <figcaption><p><strong>Biking.</strong> Biking around Manhattan Beach with my partner.</p></figcaption>
+          </figure>
+          <!-- <figure>
+            <img src="assets/raptor.jpeg" class="ratio-7-8 top">
+            <figcaption><p><strong>Birding.</strong> A tiny Raptor I met in Santa Barbara.</p></figcaption>
+          </figure> -->
+          <!-- <figure>
+            <img src="assets/rainforest-1.jpeg">
+            <figcaption><p><strong>Forests.</strong> A tiny Raptor I met in Santa Barbara.</p></figcaption>
+          </figure> -->
+          <figure>
+            <img src="assets/rainforest-1.jpeg">
+            <figcaption><p><strong>Nature.</strong> Nullam quis risus eget urna mollis ornare vel eu leo.</p></figcaption>
+          </figure>
+          <!-- <figure>
+            <video playsinline muted autoplay loop preload="auto" class="ratio-1-1">
+              <source src="assets/yellow-bird.mp4" type="video/mp4">
+            </video>
+            <figcaption><p><strong>Birding.</strong> A little friend.</p></figcaption>
+          </figure> -->
+           <figure>
+            <img src="assets/raptor.jpeg" class="ratio-7-8 top">
+            <figcaption><p><strong>Birding.</strong> A tiny Raptor I met in Santa Barbara.</p></figcaption>
+          </figure>
+          <figure>
+            <img src="assets/moon-jar.jpeg" class="ratio-1-1">
+            <figcaption><p><strong>Pottery.</strong> A tiny moon jar I made on a pottery wheel.</p></figcaption>
+          </figure>
+          <figure>
+            <video playsinline muted autoplay loop preload="auto" class="ratio-1-1 lower">
+              <source src="assets/butterfly.mp4" type="video/mp4">
+            </video>
+            <figcaption><p><strong>Butterflies.</strong> A fuzzy friend I spotted in Big Sur.</p></figcaption>
+          </figure>
+          <!-- <figure>
+            <img src="assets/belly-flowers.jpeg" class="ratio-1-1 bottom">
+            <figcaption><p><strong>Wildflowers.</strong> Little "Belly Flowers" on my family's ranch in NorCal.</p></figcaption>
+          </figure> -->
+          <!-- <figure>
+            <img src="assets/channel-islands-plants-1.jpeg" class="ratio-7-8">
+            <figcaption><p><strong>Native plants.</strong> The beautiful natural coastal sage shrub landscape on the Channel Islands.</p></figcaption>
+          </figure> -->
+          <figure>
+            <img src="assets/belly-flowers.jpeg" class="ratio-1-1 bottom">
+            <figcaption><p><strong>Wildflowers.</strong> Little "Belly Flowers" on my family's ranch in NorCal.</p></figcaption>
+          </figure>
+          <!-- <figure>
+            <img src="assets/cockatoo.jpeg" class="ratio-1-1">
+            <figcaption><p><strong>Birding.</strong> A cockatoo I spotted in a tree in South Pasadena.</p></figcaption>
+          </figure> -->
+          <figure>
+            <video playsinline muted autoplay loop preload="auto" class="ratio-7-8 top">
+              <source src="assets/fox.mp4" type="video/mp4">
+            </video>
+            <figcaption><p><strong>Wildlife.</strong> A tiny fox I shared a campsite with on the Channel Islands.</p></figcaption>
+          </figure>
+          <!-- <figure>
+            <img src="assets/belly-flowers.jpeg" class="ratio-1-1 bottom">
+            <figcaption><p><strong>Wildflowers.</strong> Little "Belly Flowers" on my family's ranch in NorCal.</p></figcaption>
+          </figure> -->
+          <figure>
+            <img src="assets/channel-islands-plants-1.jpeg">
+            <figcaption><p><strong>Native plants.</strong> The beautiful natural coastal sage shrub landscape on the Channel Islands.</p></figcaption>
+          </figure>
+          <!-- <figure>
+            <img src="assets/lupine.jpeg" class="ratio-3-4">
+            <figcaption><p><strong>Wildflowers.</strong> A field of Lupine in Point Reyes.</p></figcaption>
+          </figure> -->
+        </div>
+
+
+        <!-- <ul>
+          <li>I can solve a Rubik's cube in under 1 minute</li>
+          <li>I have climbed to the summit of Half Dome</li>
+          <li>I can play the theme song to 'Succession' on the piano</li>
+          <li>I enjoy bird watching and my favorite bird is the American Kestrel</li>
+          <li>I solo backpacked across the largest of the Channel Islands</li>
+          <li>I enjoy creating ceramics on a pottery wheel</li>
+        </ul> -->
+<!-- 
+        <div class="hobbies">
+          <div class="card">
+            <figure>
+              <img src="assets/IMG_9241.jpeg">
+              <figcaption><p>Me at the end of my channel island backpacking trek.</p></figcaption>
+            </figure>
+            <h5>Adventures</h5>
+            <p class="small">I solo backpacked across the Channel Islands</p>
           </div>
-          <div class="stack smaller">
-            <h2 class="mono unset">Lumi</h2>
-            <h4 class="unset-weight unset-lh">Marketplace connecting <span class="keep-together">e-commerce</span> brands with packaging suppliers.</h4>
-            <!-- <a href="#" class="text-link">View case study</a> -->
-            <p class="disabled">Case study coming soon</p>
+          <div class="card">
+            <img src="assets/IMG_0827.jpeg">
+            <h5>Hiking</h5>
+            <p class="small">I have climbed to the summit of Half Dome</p>
           </div>
-        </section>
-        <section class="switcher pop-in row-reverse">
-          <a href="https://getpopin.app" class="thumbnail">
-            <img src="assets/pop-in-phone-mockup@2x.png" width="810" height="1684">
-          </a>
-          <div class="stack smaller">
-            <h2 class="mono unset">Pop-in</h2>
-            <h4 class="unset-weight unset-lh">Reimagined the buddy list for hanging out IRL.</h4>
-            <a href="https://getpopin.app" rel="external" class="text-link arrow">View project</a>
+          <div class="card">
+            <img src="assets/IMG_3764.jpeg">
+            <h5>Bird-Watching</h5>
+            <p class="small">My favorite bird is the American Kestrel</p>
           </div>
-        </section>
-        <section class="switcher scout">
-          <a href="https://scout.wine" class="thumbnail">
-            <img src="assets/wine-phone-mockup@2x.png" width="810" height="1684">
-          </a>
-          <div class="stack smaller">
-            <h2 class="mono unset">Scout</h2>
-            <h4 class="unset-weight unset-lh">Tool for finding natural wine in Los Angeles.</h4>
-            <a href="https://scout.wine" rel="external" class="text-link arrow">View project</a>
+          <div class="card">
+            <img src="assets/IMG_9753.jpeg">
+            <h5>Pottery</h5>
+            <p class="small">I enjoy playing with shapes on the pottery wheel</p>
           </div>
-        </section>
-      </section>
+          <div class="card">
+            <img src="assets/IMG_0015.jpeg">
+            <h5>Cats</h5>
+            <p class="small">I enjoy playing with shapes on the pottery wheel</p>
+          </div>
+          <div class="card">
+            <img src="assets/IMG_3732.jpeg">
+            <h5>Friends & Family</h5>
+            <p class="small">I enjoy playing with shapes on the pottery wheel</p>
+          </div>
+        </div> -->
+
+
+
+        <!-- <p class="medium">I am passionate about creating scalable design systems and intuitive interfaces that solve complex problems.</p> -->
+
+        <!-- I love tackling complex problems and creating systems that make  -->
+
+        <!-- <p>I first started tinkering with designing and coding in the early 00s courtesy of Neopets and Myspace. I loved being able to write a few lines and see the whole look of a site transform. It felt like magic.</p> -->
+        <!-- <h3>Origin story</h3>
+        <p>Back in the 90s my software engineer father built me a Connect 4 video game. The graphics may have looked like they were drawn in MSpaint but the programming was so clever that it was nearly impossible to win. This fascinated me. It felt like my father had performed some kind of magic and I desperately wanted to know how to master it.</p>
+        <p>Fast forward to the early 00s and I'm a teen on the internet playing with Neopets and using Myspace and being frustrated with how bad everything on the internet looks. So I started tinkering with html and css and making my own custom themes. Each new property I learned to control felt like unlocking some sort of power. I was addicted and could make your myspace look dope but I didn't really know what to use my new skills for beyond that.</p>
+        <h3>Hobbies</h3>
+        <p>When I'm not working I love to get outside and explore all of the natural wonders the west coast has to off.</p> -->
+      </div>
+
     </main>
-    <footer class="stack center bigger">
-     <!--  <p>
-        <span class="mono">Want to chat?</span>
-        &nbsp;Connect with me on <a href="https://www.linkedin.com/in/bethanynue" rel="external">LinkedIn</a> or email me at <a href="mailto:hello@bethany.io">hello@bethany.io</a>
-      </p> -->
-      <!-- <a href="#" class="ghost-button icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z"></path></svg>
-      </a> -->
-      <a class="btn-toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-          <path class="expand" d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z"></path>
-          <path class="contract" d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z"></path>
-        </svg>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.9967C6.47715 21.9967 2 17.5196 2 11.9967C2 6.47386 6.47715 1.9967 12 1.9967C17.5228 1.9967 22 6.47386 22 11.9967C22 17.5196 17.5228 21.9967 12 21.9967ZM12 19.9967V3.9967C7.58172 3.9967 4 7.57843 4 11.9967C4 16.415 7.58172 19.9967 12 19.9967Z"></path></svg> -->
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.9967C6.47715 21.9967 2 17.5196 2 11.9967C2 6.47386 6.47715 1.9967 12 1.9967C17.5228 1.9967 22 6.47386 22 11.9967C22 17.5196 17.5228 21.9967 12 21.9967ZM12 19.9967C16.4183 19.9967 20 16.415 20 11.9967C20 7.57843 16.4183 3.9967 12 3.9967C7.58172 3.9967 4 7.57843 4 11.9967C4 16.415 7.58172 19.9967 12 19.9967ZM12 17.9967V5.9967C15.3137 5.9967 18 8.683 18 11.9967C18 15.3104 15.3137 17.9967 12 17.9967Z"></path></svg> -->
-      </a>
+
+    <footer class="stack center">
       <div class="cluster center">
         <!-- <a href="#" class="no-ul mono">About</a> -->
         <!-- <a href="#work" aria-current="page" class="no-ul mono">Work</a> -->
-        <a href="https://github.com/bethanyjoy" rel="external" class="no-ul mono">Github</a>
-        <a href="https://www.goodreads.com/user/show/63956605-bethany-nuechterlein" rel="external" class="no-ul mono">Goodreads</a>
-        <a href="https://www.linkedin.com/in/bethanynue" rel="external" class="no-ul mono">LinkedIn</a>
-        <a href="https://read.cv/bethany" rel="external" class="no-ul mono">Read CV</a>
+        <!-- <a href="https://github.com/bethanyjoy" rel="external" class="no-ul mono">Github</a> -->
+        <a href="https://read.cv/bethany" rel="external" class="hide-ul mono">Read CV</a>
+        <!-- <a href="https://www.goodreads.com/user/show/63956605-bethany-nuechterlein" rel="external" class="no-ul mono">Goodreads</a> -->
+        <a href="https://www.linkedin.com/in/bethanynue" rel="external" class="hide-ul mono">LinkedIn</a>
       </div>
     </footer>
+
     <script>
       const btn = document.querySelector(".btn-toggle");
       const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -119,5 +248,5 @@
         localStorage.setItem("theme", theme);
       });
     </script>
+
   </body>
-</html>

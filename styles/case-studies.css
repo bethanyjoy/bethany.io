@@ -1,9 +1,34 @@
-h1 {
-	margin-block-end: var(--space-2xs);
+/* Index link */
+
+#index-link {
+	position: fixed;
+	display: flex;
+	z-index: 1000;
+	top: var(--space-l);
+	left: 0;
+	right: 0;
+
+	.cluster {
+		padding: var(--space-3xs) var(--space-xs) var(--space-3xs) var(--space-2xs);
+		border-radius: 2rem;
+		backdrop-filter: blur(16px);
+		-webkit-backdrop-filter: blur(16px);
+		transition: background-color 0.4s;
+		margin: auto;
+		background-color: var(--index-link-bgdd);
+	}
 }
 
-main > header {
-	margin-block-start: 0;
-	margin-block-end: 0;
+/* Hide + show link */
+
+.hide {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 0.05s, opacity 0.05s linear;
 }
 
+.show {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.25s linear;
+}
