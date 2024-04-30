@@ -129,7 +129,7 @@ body.dark-theme {
   --black-a11: rgba(0, 0, 0, 0.9);
   --black-a12: rgba(0, 0, 0, 0.95);
 
-  --white-a1: rgba(255, 255, 255, 0.06);
+  --white-a1: rgba(255, 255, 255, 0.05);
   --white-a2: rgba(255, 255, 255, 0.1);
   --white-a3: rgba(255, 255, 255, 0.15);
   --white-a4: rgba(255, 255, 255, 0.2);
@@ -166,8 +166,11 @@ body {
 
 body.dark-theme {
 
-  --background: rgb(34, 34, 34);
-  --index-link-bgd: rgba(34, 34, 34, 0.4);
+   --background: rgb(34, 34, 34);
+    --index-link-bgd: rgba(34, 34, 34, 0.4);
+
+    /*--background: rgb(31, 31, 31);
+    --index-link-bgd: rgba(31, 31, 31, 0.4);*/
 
   /* Project colors */
   --lumi-thumb: rgb(128, 117, 97);
@@ -186,8 +189,11 @@ body.dark-theme {
   /* Defaults to dark theme */
   body {
 
-    --background: rgb(34, 34, 34);
+   --background: rgb(34, 34, 34);
     --index-link-bgd: rgba(34, 34, 34, 0.4);
+
+    /*--background: rgb(31, 31, 31);
+    --index-link-bgd: rgba(31, 31, 31, 0.4);*/
 
     /* Project colors */
     --lumi-thumb: rgb(128, 117, 97);
