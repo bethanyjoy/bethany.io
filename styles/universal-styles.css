@@ -95,11 +95,8 @@ main > header {
 /* Custom spacing below header on about page */
 
 .about {
-  & main > header {
-      margin-block-end: var(--space-l);
-  }
-  & main > * + * {
-      margin-block-start: var(--space-l);
+  .prose {
+    margin-block-start: var(--space-l-xl);;
   }
 }
 
