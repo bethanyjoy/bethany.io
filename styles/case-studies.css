@@ -15,7 +15,7 @@
 		-webkit-backdrop-filter: blur(16px);
 		transition: background-color 0.4s;
 		margin: auto;
-		background-color: var(--index-link-bgdd);
+		background-color: var(--index-link-bgd);
 	}
 }
 
