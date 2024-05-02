@@ -28,7 +28,7 @@
 :root {
 
   /* Layout & spacing */
-  --measure: 820px;
+  --measure: 800px;
   --gutter: var(--space-m-l);
 
   /* Colors */
