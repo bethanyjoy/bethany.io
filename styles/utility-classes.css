@@ -68,6 +68,10 @@
   font-weight: 600!important;
 }
 
+.smaller {
+  font-size: var(--step--1)!important;
+}
+
 /* Images and videos */
 
 img, video {

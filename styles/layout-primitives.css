@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: var(--space-s);
+  gap: var(--space-m);
 
   &.center {
     justify-content: center;
