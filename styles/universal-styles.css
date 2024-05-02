@@ -140,7 +140,7 @@ p:first-child, h1, h2, h3, h4, h5 {
 
 .h4, h4 {
   font-size: var(--step-0);
-  font-weight: 450;
+  font-weight: 550;
 }
 
 /*.h5, h5 {
@@ -158,7 +158,6 @@ p {
   &.xlarge, &.large, &.medium {
     color: unset;
     line-height: 1.4;
-/*    -webkit-font-smoothing: unset;*/
   }
   &.xlarge {
     font-size: var(--step-3);
@@ -178,6 +177,10 @@ p {
 .heavy {
   color: unset;
   -webkit-font-smoothing: unset;
+}
+
+::selection {
+  background: var(--highlight);
 }
 
 /* Link styles */

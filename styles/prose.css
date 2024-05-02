@@ -44,10 +44,13 @@
     &:not(:first-child) {
 			margin-block-start:var(--space-xl);
 		}
+		&:has(+ p strong) {
+			margin-block-end:var(--space-s);
+		}
 	}
 
 	& h4 {
-    margin-block-end:var(--space-3xs);
+    margin-block-end:var(--space-2xs);
     &:not(:first-child) {
 			margin-block-start:var(--space-m);
 		}
@@ -55,7 +58,10 @@
 
 	& p + p {
 		margin-block-start:var(--space-xs);
-/*		text-indent: 1.4em;*/
+		/*text-indent: 1.5em;
+		&:has(strong) {
+			text-indent: 0;
+		}*/
 	}
 
 /*	& p.medium ~ p {
@@ -73,6 +79,11 @@
 
 	.stats {
 		margin-block-start: var(--space-l);
+	}
+
+  & strong {
+		color: var(--gray-12);
+		font-weight: 600;
 	}
 
 	/* Media */
@@ -162,7 +173,7 @@
 
 	}
 
-	.two-col {
+	.two-col:not(.frame) {
     -moz-columns: 2;
     columns: 2;
     -moz-column-gap: var(--space-xl);
@@ -186,11 +197,6 @@
 			&:not(.no-bleed *, .two-col *) {
 	    	max-inline-size: min(var(--measure), calc(100% - var(--space-m-l) * 2));
 	    }
-
-	    & strong {
-				color: var(--gray-12);
-				font-weight: 600;
-			}
 
 			& p:first-child:before {
 		    content: "▲";

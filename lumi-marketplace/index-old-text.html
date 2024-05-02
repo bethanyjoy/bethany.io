@@ -67,10 +67,18 @@
           <dt>Role</dt>
           <dd>End-to-end product design</dd>
         </div>
+        <!-- <div>
+          <dt>Role</dt>
+          <dd>Lead designer through end to end process: discovery, user research, requirements, design, testing, support through launch</dd>
+        </div> -->
         <div>
           <dt>Stakeholders</dt>
           <dd>1 project manager, 4 engineers</dd>
         </div>
+<!--         <div>
+          <dt>Collaborators</dt>
+          <dd>Spencer Nelson (PM), Kimi Spencer (Engineer), Arthur Xavier (Engineer)</dd>
+        </div> -->
         <div>
           <dt>Tools</dt>
           <dd>Figma, FigJam</dd>
@@ -84,67 +92,51 @@
       <!-- Background -->
 
       <h2>Background</h2>
-
       <p>Since it's founding, Lumi has been dedicated to providing a platform that allows businesses to easily order custom packaging. As the founding designer at Lumi I spent my first 5 years at the company designing and helping to launch interfaces that allowed clients to request quotes and place orders, allowed our team to manage orders and quote requests, and allowed our suppliers to respond to quote requests.</p>
 
       <h3>The Problem</h3>
-
       <p>Lumi representatives managed the flow of information between clients and suppliers. As our clients grew, users reported communication delays and production errors. We needed to remove this bottleneck and make Lumi more scalable.</p>
-
       <figure class="no-bleed">
         <img class= "border" src="assets/diagrams/current-flow-white.svg">
         <figcaption><p><strong>Current flow of information.</strong> Lumi team members pass information between clients and suppliers.</p></figcaption>
       </figure>
-
       <figure class="no-bleed">
         <img class= "border" src="assets/diagrams/ideal-flow-white.svg">
         <figcaption><p><strong>Ideal flow of information.</strong> Information passes freely between clients and suppliers using Lumi.</p></figcaption>
       </figure>
 
       <h3>The Goal</h3>
-
       <p>Design a new quote request flow that allows customers to request quotes and communicate with suppliers without intervention from our team.</p>
 
       <!-- Research -->
 
       <h2>Research</h2>
-
       <p>Though I was given an idea of the goal of this project during kick-off, I wanted to make sure I understood all of the nuances and pain points of our current flow so I could design a flow that works for everyone and advocate on behalf of our users.
 
       <h3>Current workflow</h3>
-
       <p>I started by interviewing members of our team that were acting as intermediaries between customers and manufacturers to find out when they needed to intervene in the quote request process.</p>
       <figure class="no-bleed">
         <img class= "border" src="assets/diagrams/swimlane-current.png">
         <figcaption><p><strong>Diagram of current quoting workflow.</strong> I created a workflow diagram to better understand the current quoting workflow and when our team was involved in the process (highlighted in yellow).</p></figcaption>
       </figure>
-
       <p>I was able to determine that the most common reasons for intervention by our team were to collect missing information, ask clarifying questions on behalf of suppliers, and provide packaging consulting for novice clients.</p>
 
       <h3>Client experience</h3>
-
       <p>I then interviewed our clients and had them walk me through their current quote request flow to better understand where they were currently struggling.</p>
-
       <figure class="no-bleed">
         <img class= "border" src="assets/diagrams/journey-map.png">
         <figcaption><p><strong>Journey map of client experience.</strong> Based on my client interviews I created a journey map to highlight the pain points our clients were experiencing during the quoting process.</p></figcaption>
       </figure>
-
       <p>From these interviews I learned that main struggles that our clients were experiencing were that they didn't understand the options in the quote request form, the questions in the form required too much detail, and it was difficult to complete the flow on their mobile devices.</p>
 
       <h2>Brainstorming</h2>
-
       <p>Next, I took the information I gathered from the interviews I conducted and started trying to imagine what the quoting workflow would look like if we were to remove our team from the process and allow clients and suppliers to interact directly through the platform.</p>
-
       <figure class="no-bleed">
         <img class= "border" src="assets/diagrams/swimlane-planned.png">
         <figcaption><p><strong>Diagram of new planned quoting workflow.</strong> A new seamless flow between clients and suppliers that includes Expert Services as a fallback if clients need more help.</p></figcaption>
       </figure>
-
       <p>I also integrated into this flow a new concept that we had been exploring called “Expert Services” which would be an add-on service outside of the normal quote request flow aimed at pairing novice clients with packaging designers and consultants to help them develop their packaging.</p>
-
       <p>Now that I had an overall flow outlined and sign-off from stakeholders, I began to brainstorm what the overall structure of this flow could look like. I wanted to get consensus on what the relationships were between the different entities before diving into any specific area in more detail.</p>
-
       <figure class="no-bleed">
         <img class= "border" src="assets/diagrams/screenflow.png">
         <figcaption><p><strong>Diagram of proposed screenflow for quoting.</strong> Depicts the different entities and how they fit into the overall quoting flow.</p></figcaption>
@@ -153,7 +145,11 @@
       <!-- Requesting quotes -->
 
       <h2>Requesting quotes</h2>
+      <!-- <p>Before I started working on the quote request form in more detail, I needed to better understand what information our clients were struggling to provide and why. So I met up with our quoting team again to take a deeper look into the issues and then began exploring some different solutions to these problems.</p> -->
 
+      <!-- <p>Before I started working on the quote request form in more detail, I needed to better understand what information our clients were struggling to provide and why.</p> -->
+
+      <!-- <h3>Why were users struggling?</h3> -->
       <p>Now that I had an idea of the overall flow and shape of the project I started to dig into one of the most critical components of this workflow, the quote request form.</p>
 
       <p>One of the biggest underlying issues with the existing quote request form was that it wasn’t originally designed to be used by our clients. It was originally developed for internal use by members of our team with packaging expertise.</p>
@@ -163,14 +159,22 @@
         <figcaption><p><strong>A portion of the existing quote request form.</strong> This form was originally developed for internal use by members of our team with packaging expertise.</p></figcaption>
       </figure>
 
+      <!-- <p>Because the form was built for people with packaging expertise, it was designed to capture a high level of technical details, details that clients often won’t be able to provide. It was also designed to be compact so that our team could quickly scan all of the information while they were filling out the form. While this is a helpful feature, the compact nature of the form left no space for contextual information that would be to helpful clients.</p> -->
+
       <p>Because the form was built for people with packaging expertise, features that would have been helpful for clients like contextual information and allowing less detailed specifications were not prioritized.</p>
 
-      <p>Since the goal of this project is to reduce intervention from our team, I thought it was the perfect time to finally design a form specifically for clients that addresses some of these issues.</p>
+        <p>Since the goal of this project is to reduce intervention from our team, I thought it was the perfect time to finally design a form specifically for clients that addresses some of these issues.</p>
+
+      <!-- <h3>Design solutions</h3>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p> -->
 
       <h3>Contextual Information</h3>
-
+      <!-- <p><strong>Problem - </strong>Because the existing form was so compact and used only default select and text input fields, there was no space to display contextual information. Without enough information about the options they were choosing from, clients would be left unable to respond to some questions.</p> -->
       <p>Without enough information about the options they were choosing from, clients were unable to respond to some questions. To solve this I incorporated novel input methods, like the card selector pictured below, that help provide contextual information during selection.</p>
-
+      <!-- <h4>Solution</h4>
+      <p>I incorporated novel input methods, like the card selector pictured below, that help provide contextual information during selection.</p> -->
+      <!-- <p><strong>Solution - </strong>I incorporated novel input methods, like the card selector pictured below, that help provide contextual information during selection.</p> -->
+      <!-- <p>To solve this I incorporated novel input methods, like the card selector pictured below, that help provide contextual information during selection.</p> -->
       <figure>
         <div class="frame blue">
           <video class="screen" playsinline autoplay loop muted preload="auto">
@@ -180,9 +184,22 @@
         <figcaption><p><strong>Selecting a box style.</strong> I incorporated an illustration depicting the shape of each style to help clients make a more informed choice.</p></figcaption>
       </figure>
 
-      <h3>Specificity vs Flexibility</h3>
+      <!-- <h3>Progresive Disclosure</h3>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
+      <figure>
+        <div class="frame green">
+          <video class="screen" playsinline autoplay loop muted preload="auto">
+            <source src="assets/videos/color.mp4" type="video/mp4">
+          </video>
+        </div>
+        <figcaption><p><strong>Selecting material options.</strong></p></figcaption>
+      </figure> -->
 
-      <p>The original form could capture very detailed information, but requiring that level of specificity precluded clients from being able to to provide basic info.</p>
+      <h3>Specificity vs Flexibility</h3>
+ <!--      <p><strong>Problem - </strong>The original form required a level of specificity that sometimes made it hard to capture basic information from clients. For instance a client could discreetly add each pantone color they want printed. But if they didn’t know the exact pantone colors but knew how many print colors they wanted to use, there was no way for them to convey that information.</p>
+      <p><strong>Solution - </strong>I simplified the required fields to allow clients to provide less detailed information and added a fallback option, "I don't know," for clients who haven't decided on certain details.</p> -->
+
+            <p>The original form could capture very detailed information, but requiring that level of specificity precluded clients from being able to to provide basic info.</p>
 
       <p>For example a client could list each pantone color they want to use for printing, but they couldn't simply state the number of print colors they wanted to use. To solve this I reduced the specificity required, allowing clients to provide less detailed information, and integrated more fallback options, ie "I don't know."</p>
 
@@ -192,7 +209,7 @@
             <source src="assets/videos/printing.mp4" type="video/mp4">
           </video>
         </div>
-        <figcaption><p><strong>Selecting printing options.</strong> I simplified the options to make it easier for clients to convey the information they know.</p></figcaption>
+        <figcaption><p><strong>Selecting printing options.</strong> I simplified the options to make it easier for clients to convey the information they know. </p></figcaption>
       </figure>
 
       <p>The issue of specificity was particularly problematic when selecting a material. A client was able to select from a list of liner boards with of different material colors and thicknesses; but if they only knew that they wanted a white box there was no way for them to simply select "white".</p>
@@ -222,21 +239,15 @@
       </figure> -->
 
       <h3>Creating structure</h3>
-
+      
       <!-- <p>When I first started working on designs for a new quote request form, I used a single page layout with all of the sections of the form on one page. While a single page layout in theory seems like it would feel less daunting than a stepped flow, the opposite was true.</p> 
 
       <p>As I added in more contextual information and nested sections, the single page design felt crowded and overwhelming. And when I made a prototype with progressive disclosure elements expanding and contracting, shifting the page content around and even changing the contents of subsequent sections, I knew this layout had reached its breaking point.</p> -->
 
-      <!-- <p>When I started experimenting with a stepped layout, I knew that in order to effectively test its viability I needed to create an interactive prototype. So after converting some sections to the new stepped layout design, I linked my screens into a prototype in Figma and started testing.</p>
-
+      <p>When I started experimenting with a stepped layout, I knew that in order to effectively test its viability I needed to create an interactive prototype. So after converting some sections to the new stepped layout design, I linked my screens into a prototype in Figma and started testing.</p>
       <p>I found that having each section on a separate screen provided a focus that was lacking in the previous layout. And while this layout did feel initially less overwhelming than the single page layout, it did feel like a slog going through screen after screen, even with a bar at the bottom showing the user’s progress through the flow.</p>
 
-      <p>To help soothe these feelings of listlessness I decided to incorporate more structure into the flow by dividing it up into clearly defined sections. I found this approach helped to ground the user by allowing them to anticipate the questions they would be asked in each section. Also breaking up the progress bar into a smaller bar for each section helped the user feel like they were making more progress and provided a feeling of accomplishment when they completed a section.</p> -->
-
-      <p>When I started experimenting with a stepped layout, I knew that in order to test its viability I needed to create an interactive prototype. So after converting some sections to the new stepped layout design, I linked my screens into a prototype in Figma and started testing.</p>
-
-      <p>While this layout provided more focus and felt less overwhelming than a single page layout, going through screen after screen without structure felt daunting. To alleviate this I decided to add some structure to the flow by dividing it up into a couple clearly defined sections. I found this helped provide focus and clarity when starting each section and resulted a sense of accomplishment and momentum after completing each section.</p>
-
+<p>To help soothe these feelings of listlessness I decided to incorporate more structure into the flow by dividing it up into clearly defined sections. I found this approach helped to ground the user by allowing them to anticipate the questions they would be asked in each section. Also breaking up the progress bar into a smaller bar for each section helped the user feel like they were making more progress and provided a feeling of accomplishment when they completed a section.</p>
       <figure>
         <div class="frame two-col blue">
           <img class="screen" src="assets/desktop/new-project.png">
@@ -244,13 +255,11 @@
           <img class="screen" src="assets/desktop/materials.png">
           <img class="screen" src="assets/desktop/printing.png">
         </div>
-        <figcaption><p><strong>Dividing into sections.</strong> Grouped the pages of the flow into clearly defined sections to provide structure to the flow.</p></figcaption>
+        <figcaption><p><strong>Creating structure.</strong> Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur.</p></figcaption>
       </figure>
 
-      <!-- <h3>Sending to suppliers</h3>
-
+      <h3>Sending to suppliers</h3>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
-
       <figure>
         <div class="frame dark">
           <video class="screen" playsinline autoplay loop muted preload="auto">
@@ -258,12 +267,10 @@
           </video>
         </div>
         <figcaption><p><strong>Fallback.</strong> Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur.</p></figcaption>
-      </figure> -->
+      </figure>
 
-      <!-- <h3>Optimized for mobile</h3>
-
+      <h3>Optimized for mobile</h3>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
-
       <figure>
         <div class="frame three-col mobile">
           <div>
@@ -280,23 +287,20 @@
           </div>
         </div>
         <figcaption><p><strong>Optimized for mobile.</strong> Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur.</p></figcaption>
-      </figure> -->
+      </figure>
 
-      <!-- <h2>Collaborate & Select</h2>
-
+      <h2>Collaborate & Select</h2>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
 
       <h3>Accessing information</h3>
-
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
 
       <figure class="no-bleed">
         <img class= "border" src="assets/diagrams/screenflow-collaborate.png">
         <figcaption><p><strong>Diagram of proposed screenflow.</strong> Lumi team members pass information between clients and suppliers.</p></figcaption>
-      </figure> -->
+      </figure>
 
-      <!-- <h3>Project page</h3>
-
+      <h3>Project page</h3>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
 
       <figure>
@@ -306,10 +310,9 @@
           </video>
         </div>
         <figcaption><p><strong>Project page.</strong> Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur.</p></figcaption>
-      </figure> -->
+      </figure>
 
-      <!-- <h3>Messaging center</h3>
-
+      <h3>Messaging center</h3>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
 
       <figure>
@@ -317,10 +320,9 @@
           <img class="screen" src="assets/desktop/messages.png">
         </div>
         <figcaption><p><strong>Messaging center.</strong> Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur.</p></figcaption>
-      </figure> -->
+      </figure>
 
-      <!-- <h3>Access to projects</h3>
-
+      <h3>Access to projects</h3>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
 
       <figure class="no-bleed">
@@ -336,9 +338,8 @@
         </div>
         <figcaption><p><strong>Homepage.</strong> Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur.</p></figcaption>
       </figure>
- -->
-      <!-- <h3>Optimized for mobile</h3>
 
+      <h3>Optimized for mobile</h3>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
 
       <figure>
@@ -357,54 +358,49 @@
           </div>
         </div>
         <figcaption><p><strong>Optimized for mobile.</strong> Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur.</p></figcaption>
-      </figure> -->
+      </figure>
 
       <h2>Outcomes</h2>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod.</p>
 
-      <!-- <p>With the launch of the marketplace, we saw an increase in efficiency and accuracy across the board. While some existing clients still expected a more hands on approach from our sales team, most clients (75%) that onboarded after we launched marketplace were able to complete the full quoting process without intervention.</p> -->
-
-      <p>With the launch of the marketplace, we saw a 50% reduction in the average wait time to receive quotes and a 40% reduction in the average time the sales team spent per quote request.</p>
-
-        <p>While 60% of existing clients still expected a more hands on approach from our sales team, 75% of clients that that onboarded after we launched marketplace were able to complete the full quoting process without intervention from our team.</p>
-
-      <p>This project represented our biggest step towards scalability to date as the company. And then just a few short months after we launched marketplace, Lumi was acquired by Narvar.</p>
-
-      <p>Also on a personal note, this project felt like a culmination of everything I had worked on in my prior years at Lumi which made the experience even more rewarding. ☺</p>
-
-      <!-- <dl class="stats">
+      <dl class="stats">
         <div>
           <dt>Average sales team time spent per client request</dt>
-          <dd>↓ 40%</dd>
-        </div>
-        <div>
-          <dt>Quotes completed without intervention</dt>
-          <dd>75%</dd>
-        </div>
-        <div>
-          <dt>Average wait time to receive quotes</dt>
           <dd>↓ 50%</dd>
         </div>
         <div>
-          <dt>Number of messages asking for help with form</dt>
+          <dt>Average wait time to receive quotes</dt>
           <dd>↓ 30%</dd>
         </div>
         <div>
+          <dt>Number of messages asking for help with form</dt>
+          <dd>↓ 20%</dd>
+        </div>
+        <div>
           <dt>Accuracy of quotes received from suppliers</dt>
-          <dd>↑ 10%</dd>
+          <dd>↓ 10%</dd>
         </div>
         <div>
           <dt>Accuracy of specs submitted in request</dt>
-          <dd>↑ 25%</dd>
+          <dd>↓ 25%</dd>
+        </div>
+        <div>
+          <dt>Average sales team time spent per client request</dt>
+          <dd>↓ 50%</dd>
         </div>
       </dl>
- -->
+
     </div>
 
     </main>
 
     <footer class="stack center">
       <div class="cluster center">
+        <!-- <a href="#" class="no-ul mono">About</a> -->
+        <!-- <a href="#work" aria-current="page" class="no-ul mono">Work</a> -->
+        <!-- <a href="https://github.com/bethanyjoy" rel="external" class="no-ul mono">Github</a> -->
         <a href="https://read.cv/bethany" rel="external" class="hide-ul mono">Read CV</a>
+        <!-- <a href="https://www.goodreads.com/user/show/63956605-bethany-nuechterlein" rel="external" class="no-ul mono">Goodreads</a> -->
         <a href="https://www.linkedin.com/in/bethanynue" rel="external" class="hide-ul mono">LinkedIn</a>
       </div>
     </footer>
