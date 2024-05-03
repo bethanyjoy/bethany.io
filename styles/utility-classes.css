@@ -110,10 +110,7 @@ img, video {
   &.lower {
     object-position: 0% 30%;
   }
-
 }
-
-
 
 /* Alignment */
 
@@ -131,12 +128,6 @@ img, video {
 
 .left {
   text-align: left;
-}
-
-@media only screen and (max-width: 820px) {
-  .center p {
-    text-align: left;
-  }
 }
 
 .row-reverse {

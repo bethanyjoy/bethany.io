@@ -17,7 +17,7 @@
 	.full-bleed {
     width: 100%;
     grid-column: 1 / -1;
-/*    padding-inline: 0;*/
+		/* padding-inline: 0;*/
 	}
 
 	> figure {
@@ -27,10 +27,6 @@
 	}
 
 	/* Spacing */
-
-/*	& h2, h3, h4, h5, h6 {
-		margin-block-end:var(--space-s);
-	}*/
 
 	& h2 {
 		margin-block-end:var(--space-s);
@@ -44,9 +40,6 @@
     &:not(:first-child) {
 			margin-block-start:var(--space-xl);
 		}
-		&:has(+ p strong) {
-			margin-block-end:var(--space-s);
-		}
 	}
 
 	& h4 {
@@ -58,16 +51,9 @@
 
 	& p + p {
 		margin-block-start:var(--space-xs);
-		/*text-indent: 1.5em;
-		&:has(strong) {
-			text-indent: 0;
-		}*/
+		/*text-indent: 1.5em;*/
 	}
 
-/*	& p.medium ~ p {
-		margin-block-start:var(--space-m);
-	}
-*/
 	> figure:not(:first-child), figure + p {
 
 		margin-block-start: var(--space-xl);
@@ -77,13 +63,8 @@
 		}
 	}
 
-	.stats {
-		margin-block-start: var(--space-l);
-	}
-
-  & strong {
-		color: var(--gray-12);
-		font-weight: 600;
+	& dl.details {
+		margin-block-start: var(--space-xl-2xl);
 	}
 
 	/* Media */
@@ -101,6 +82,10 @@
 			padding: var(--space-m-xl) var(--space-m-2xl);
 			background-color: var(--gray-bgd);
 
+			&:is(.no-bleed > *) {
+				padding: var(--space-s-l);
+			}
+
 			.screen {
 				border-radius:var(--radius-m);
 				box-shadow:
@@ -111,30 +96,20 @@
 				  13px 11.3px 33.4px rgba(var(--shadow-value), 0.05),
 				  31px 27px 80px rgba(var(--shadow-value), 0.07)
 				;
-			}
-
-			&:is(.no-bleed > *) {
-				padding: var(--space-s-l);
-				.screen {
-					border-radius:var(--radius-s);
-				}
-			}
-
-			&.two-col {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				grid-gap: var(--space-m-l);
-				.screen {
+				&:is(.two-col > *), &:is(.no-bleed *) {
 					border-radius: var(--radius-s);
 				}
 			}
 
-			&.three-col {
+			&.grid {
 				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				grid-gap: var(--space-s-xl);
-				.screen {
-					border-radius: 0;
+				&.two-col {
+					grid-template-columns: repeat(2, 1fr);
+					grid-gap: var(--space-m-l);
+				}
+				&.three-col {
+					grid-template-columns: repeat(3, 1fr);
+					grid-gap: var(--space-s-xl);
 				}
 			}
 
@@ -159,52 +134,48 @@
 			  .screen {
 			  	z-index: 900;
 				  margin: 1.1%;
-					/* margin: 1.23456%;*/
 				  padding: 2.1%;
-					/* padding: 2.48%;*/
 				  width: 97.9%;
-					/* width: 97.5308642%;*/
 				  aspect-ratio: 395 / 832 !important;
 				  border-radius: 16% / 8%;
 			  }
 			}
-
-		}
-
-	}
-
-	.two-col:not(.frame) {
-    -moz-columns: 2;
-    columns: 2;
-    -moz-column-gap: var(--space-xl);
-    column-gap: var(--space-xl);
-    margin-block:var(--space-xl);
-
-    & figure {
-	    -moz-column-break-inside: avoid;
-	    break-inside: avoid;
-	    margin-block-end: var(--space-xl);
 		}
 	}
 
 	& figcaption {
-	    font-size: var(--step--1);
-	    margin-block-start: var(--space-xs);
-	    margin-inline: auto;
-	    display: flex;
-	    position:relative;
+    font-size: var(--step--1);
+    margin-block-start: var(--space-xs);
+    margin-inline: auto;
+    display: flex;
+    position:relative;
 
-			&:not(.no-bleed *, .two-col *) {
-	    	max-inline-size: min(var(--measure), calc(100% - var(--space-m-l) * 2));
-	    }
+		&:not(.no-bleed *, .two-col *) {
+    	max-inline-size: min(var(--measure), calc(100% - var(--space-m-l) * 2));
+    }
 
-			& p:first-child:before {
-		    content: "▲";
-		    color: var(--gray-12);
-		    font-size: 0.8em;
-		    margin: 0 0.5em 0 0.25em;
-			}
+		& p:first-child:before {
+	    content: "▲";
+	    color: var(--gray-12);
+	    font-size: 0.8em;
+	    margin: 0 0.5em 0 0.25em;
 		}
+	}
+
+	.gallery {
+		& figure {
+	    -moz-column-break-inside: avoid;
+	    break-inside: avoid;
+	    margin-block-end: var(--space-xl);
+		}
+		.two-col {
+	    -moz-columns: 2;
+	    columns: 2;
+	    -moz-column-gap: var(--space-xl);
+	    column-gap: var(--space-xl);
+	    margin-block:var(--space-xl);
+		}
+	}
 
 
 	/* Details */
@@ -216,8 +187,6 @@
 		gap: var(--space-s);
 		border: 1px solid var(--border);
 		border-radius:var(--radius-l);
-		margin-block-start: var(--space-xl-2xl);
-
 
 		> div {
 			display: flex;
@@ -238,87 +207,6 @@
 			  color: var(--gray-11);
 			}
 		}
-
-	}
-
-	/* Stats */
-
-	& dl.stats {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-		grid-gap: var(--space-s);
-
-		> div {
-			background-color: var(--alpha-bgd);
-			border-radius: 10px;
-			padding: var(--space-s) var(--space-xs-s);
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			align-items: center;
-			justify-content: center;
-			vertical-align: center;
-
-			> dt {
-				font-size: var(--step--1);
-				font-weight: 400;
-				color: var(--gray-11);
-				-webkit-font-smoothing: antialiased;
-			}
-
-			> dd {
-				font-size: var(--step-2);
-				font-weight: 300;
-				-webkit-font-smoothing: antialiased;
-			}
-		}
-	}
-
-	/* Hobbies */
-
-	& div.hobbies {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-		grid-gap: var(--space-l);
-
-		.card {
-			/*background-color: var(--alpha-bgd);
-			border-radius: 10px;
-			padding: var(--space-s) var(--space-xs-s);*/
-			display: flex;
-			flex-direction: column;
-			/*text-align: center;
-			align-items: center;
-			justify-content: center;
-			vertical-align: center;*/
-			gap: var(--space-3xs);
-
-			/*.image {
-				border-radius: var(--radius-l);
-				margin-block-end: var(--space-2xs);
-			}*/
-
-			& img {
-					object-fit: cover;
-					border-radius: var(--radius-l);
-					width: 100%;
-					aspect-ratio: 1 / 1;
-					margin-block-end: var(--space-2xs);
-				}
-
-			/*> .text {
-				font-size: var(--step--1);
-				font-weight: 400;
-				color: var(--gray-11);
-				-webkit-font-smoothing: antialiased;
-			}
-
-			> .label {
-				font-size: var(--step-2);
-				font-weight: 300;
-				-webkit-font-smoothing: antialiased;
-			}*/
-		}
 	}
 }
 
@@ -332,18 +220,11 @@
 	}
 }
 
-/* Adjust stats grid to display 2 per row on small screens */
-
-@media (width <= 600px) {
-  .prose dl.stats {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
+/* Adjust gallery grid from 2 col to 1 col on mobile */
 
 @media (width < 400px) {
-    .prose .two-col {
-        -moz-columns: 1;
-        columns:1
-    }
+  .prose .gallery.two-col {
+    -moz-columns: 1;
+    columns:1
+  }
 }
