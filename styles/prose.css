@@ -168,7 +168,7 @@
 	    break-inside: avoid;
 	    margin-block-end: var(--space-xl);
 		}
-		.two-col {
+		&.two-col {
 	    -moz-columns: 2;
 	    columns: 2;
 	    -moz-column-gap: var(--space-xl);
