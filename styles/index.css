@@ -35,16 +35,5 @@
     &:hover img {
       transform: translateY(-1%) scale(101%);
     }
-
-    /*&.lumi {
-      background-color: var(--lumi-thumb);
-    }
-    &.pop-in {
-      background-color: var(--pop-in-thumb);
-    }
-    &.scout {
-      background-color: var(--wine-thumb);
-    }*/
   }
-
 }
