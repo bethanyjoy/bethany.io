@@ -67,6 +67,10 @@
 		margin-block-start: var(--space-xl-2xl);
 	}
 
+	& .gallery {
+		margin-block-start: var(--space-xl);
+	}
+
 	/* Media */
 
 	& figure {
@@ -173,7 +177,6 @@
 	    columns: 2;
 	    -moz-column-gap: var(--space-xl);
 	    column-gap: var(--space-xl);
-	    margin-block:var(--space-xl);
 		}
 	}
 
