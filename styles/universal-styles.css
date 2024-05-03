@@ -174,9 +174,9 @@ p {
   }
 }
 
-.heavy {
-  color: unset;
-  -webkit-font-smoothing: unset;
+strong {
+  color: var(--gray-12);
+  font-weight: 600;
 }
 
 ::selection {
