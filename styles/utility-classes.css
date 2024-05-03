@@ -68,9 +68,9 @@
   font-weight: 600!important;
 }
 
-/*.smaller {
+.smaller {
   font-size: var(--step--1)!important;
-}*/
+}
 
 /* Images and videos */
 
