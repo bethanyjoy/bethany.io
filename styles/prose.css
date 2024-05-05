@@ -8,9 +8,8 @@
   display: grid;
   grid-template-columns: 1fr min(var(--measure), calc(100% - var(--gutter) * 2)) 1fr;
   grid-column-gap: var(--gutter);
-  --image-max-width: 1180px;
-	/* ^ if editing the width, remember to change the width of 
-	the corresponding @media query at bottom of page */
+  --figure-max-width: 1260px;
+/*  --image-max-width: 1000px;*/
 
   > *, .no-bleed {
   	grid-column: 2;
@@ -31,16 +30,20 @@
 	/* Spacing */
 
 	& h2 {
-		margin-block-end:var(--space-s);
+		margin-block-end:var(--space-xl);
 		&:not(:first-child) {
-			margin-block-start:var(--space-2xl);
+			margin-block-start:var(--space-3xl);
 		}
 	}
 
+	/*& p.large, & p.medium {
+		margin-block-start:var(--space-xl);
+	}*/
+
 	& h3 {
-    margin-block-end:var(--space-xs);
-    &:not(:first-child) {
-			margin-block-start:var(--space-xl);
+    margin-block-end:var(--space-m);
+    &:not(:first-child, h2 + *) {
+			margin-block-start:var(--space-2xl);
 		}
 	}
 
@@ -52,7 +55,8 @@
 	}
 
 	& p + p {
-		margin-block-start:var(--space-xs);
+		margin-block-start:var(--space-s);
+/*		margin-block-start:1.5em;*/
 		/*text-indent: 1.5em;*/
 	}
 
@@ -79,14 +83,27 @@
 
 		& img, & video, .frame {
 			width: 100%;
-	    max-width: var(--image-max-width);
 	    margin-inline: auto;
-	    border-radius:var(--radius-l);
+		}
+
+		& img:not(.frame *), & video:not(.frame *), .frame {
+			border-radius:var(--radius-l);
+		}
+
+		&:not(.no-bleed, .two-col *) {
+			& img:not(.frame *), & video:not(.frame *), .frame {
+				width: min(var(--figure-max-width), calc(100% - (var(--gutter) * 2)));
+			}
 		}
 
 		.frame {
-			padding: var(--space-m-xl) var(--space-m-2xl);
+			padding: var(--frame-top) var(--frame-sides);
 			background-color: var(--gray-bgd);
+			text-align: center;
+			
+			/*& img, & video {
+				width: min(100%, var(--image-max-width));
+			}*/
 
 			&:is(.no-bleed > *) {
 				padding: var(--space-s-l);
@@ -151,13 +168,17 @@
 
 	& figcaption {
     font-size: var(--step--1);
-    margin-block-start: var(--space-xs);
+    margin-block-start: var(--space-s);
     margin-inline: auto;
     display: flex;
     position:relative;
 
 		&:not(.no-bleed *, .two-col *) {
     	max-inline-size: min(var(--measure), calc(100% - var(--space-m-l) * 2));
+    }
+
+    &:is(.two-col *) {
+    	margin-block-start: var(--space-xs);
     }
 
 		& p:first-child:before {
@@ -209,7 +230,7 @@
 				min-inline-size: 400px;
 				font-weight: 400;
 			  -webkit-font-smoothing: antialiased;
-			  color: var(--gray-11);
+/*			  color: var(--gray-11);*/
 			}
 		}
 	}
@@ -217,10 +238,12 @@
 
 /* Make full width image corners not rounded once @ full width of screen */
 
-@media (width <= 1180px) {
+/*@media (width <= 1180px) {*/
+@media (width <= 600px) {
   .prose figure:not(.no-bleed, .two-col *) {
-		& img, video, .frame {
+		& img:not(.frame > *), & video:not(.frame > *), .frame {
 			border-radius:0;
+			width: 100%;
 		}
 	}
 }

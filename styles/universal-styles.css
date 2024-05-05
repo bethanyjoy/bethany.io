@@ -14,7 +14,7 @@
              "Helvetica Neue", 
              Arial, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  letter-spacing: 0.02em;
+  letter-spacing: 0.0025em;
   font-weight: 400;
   scroll-behavior: smooth;
 }
@@ -111,6 +111,12 @@ nav {
   font-size: 1.0125em;
 }
 
+@media (width <= 500px) {
+  .logo span {
+    display: none;
+  }
+}
+
 /* Remove top margins */
 
 p:first-child, h1, h2, h3, h4, h5 {
@@ -128,7 +134,7 @@ h1, h2, h3, h4, h5, strong {
 }
 
 .h2, h2 {
-  font-size: var(--step-3);
+  font-size: var(--step-4);
 }
 
 .h3, h3 {
@@ -144,9 +150,9 @@ h1, h2, h3, h4, h5, strong {
 }*/
 
 p {
-  color: var(--gray-11);
+/*  color: var(--gray-11);*/
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
