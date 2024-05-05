@@ -188,7 +188,7 @@ p {
 p {
   &.xlarge, &.large, &.medium {
     color: unset;
-    line-height: 1.4;
+    line-height: 1.35;
   }
   &.xlarge {
     font-size: var(--step-3);
