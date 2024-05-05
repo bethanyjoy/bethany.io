@@ -100,7 +100,7 @@
 			padding: var(--frame-top) var(--frame-sides);
 			background-color: var(--gray-bgd);
 			text-align: center;
-			
+
 			/*& img, & video {
 				width: min(100%, var(--image-max-width));
 			}*/
@@ -168,7 +168,7 @@
 
 	& figcaption {
     font-size: var(--step--1);
-    margin-block-start: var(--space-s);
+    margin-block-start: var(--space-xs);
     margin-inline: auto;
     display: flex;
     position:relative;
@@ -181,11 +181,15 @@
     	margin-block-start: var(--space-xs);
     }
 
-		& p:first-child:before {
+		/* & p:first-child:before {
 	    content: "▲";
 	    color: var(--gray-12);
 	    font-size: 0.8em;
 	    margin: 0 0.5em 0 0.25em;
+		} */
+
+		& p {
+			color: var(--gray-9);
 		}
 	}
 

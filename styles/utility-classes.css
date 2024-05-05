@@ -24,19 +24,26 @@
 
 /* Font styles */
 
-.mono {
-  font-family: ui-monospace, 
-             Menlo, Monaco, 
-             "Cascadia Mono", "Segoe UI Mono", 
-             "Roboto Mono", 
-             "Oxygen Mono", 
-             "Ubuntu Monospace", 
+/* .mono {
+  font-family: ui-monospace,
+             Menlo, Monaco,
+             "Cascadia Mono", "Segoe UI Mono",
+             "Roboto Mono",
+             "Oxygen Mono",
+             "Ubuntu Monospace",
              "Source Code Pro",
-             "Fira Mono", 
-             "Droid Sans Mono", 
+             "Fira Mono",
+             "Droid Sans Mono",
              "Courier New", monospace;
   font-size: 0.975em;
   letter-spacing: -0.002em;
+} */
+
+.emoji {
+  font-family: "Noto Emoji", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
 }
 
 /* Links */

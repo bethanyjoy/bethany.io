@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="../styles/utility-classes.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap" rel="stylesheet">
   </head>
 
   <body class="case-study lumi">
@@ -120,10 +123,10 @@
 
       <p>As our client base grew, our quoting team struggled to keep up with the increased demand. With communication delays and production errors rising, we needed to find a way to remove this bottleneck and make Lumi more scalable.</p>
 
-      <figure class="no-bleed diagram">
+      <!-- <figure class="no-bleed diagram">
         <img class= "border" src="assets/diagrams/current-flow.svg">
         <figcaption><p><strong>Current flow of information.</strong> Lumi team members pass information between clients and suppliers.</p></figcaption>
-      </figure>
+      </figure> -->
 
       <!-- <figure class="no-bleed diagram">
         <img class= "border" src="assets/diagrams/ideal-flow.svg">
@@ -151,7 +154,8 @@
       <p>I started by interviewing our quoting team to learn when and why they were intervening in the current quote request process. I learned that the main reasons were to collect missing information, ask clarifying questions for suppliers, and provide packaging consulting to novice clients.</p>
       <figure class="no-bleed diagram">
         <img class= "border" src="assets/diagrams/swimlane-current.png">
-        <figcaption><p><strong>Diagram of the current workflow.</strong> An inefficient flow that required our team's involvement throughout the process.</p></figcaption>
+        <!-- <figcaption><p><strong>Diagram of the current workflow.</strong> An inefficient flow that required our team's involvement throughout the process.</p></figcaption> -->
+        <figcaption><p>An inefficient flow that required our team's involvement throughout the process.</p></figcaption>
       </figure>
 
       <!-- <p>I learned that our team primarily intervened to collect missing information, ask clarifying questions for suppliers, and provide packaging consulting to novice clients.</p> -->
@@ -201,14 +205,13 @@
 
       <h3>Current form</h3>
 
-      <p>The most significant underlying issue with the existing quote request form was that it wasn't initially designed for use by our clients. It was originally developed for internal use by our packaging experts.</p>
+      <p>The most significant underlying issue with the existing quote request form was that it wasn't initially designed for use by our clients. It was originally developed for internal use by our packaging experts. Because of this, high specificity and information density were prioritized over features that would have been helpful for clients, like helpful contextual information.</p>
+
 
       <figure class="no-bleed diagram">
         <img class= "border" src="assets/desktop/old-specs-form.png">
         <figcaption><p><strong>A portion of the existing quote request form.</strong> The form was developed for internal use by packaging experts, not clients.</p></figcaption>
       </figure>
-
-      <p>Because the form was built for people with packaging expertise, features that would have been helpful for clients, like contextual information and allowing less detailed specifications, were not prioritized.</p>
 
       <!-- <p>Since this project aimed to reduce the amount of intervention by our team, it was the perfect time to finally design a form specifically for clients that addressed these issues.</p> -->
 
@@ -240,9 +243,7 @@
         <figcaption><p><strong>Selecting printing options.</strong> I simplified the options to make it easier for clients to convey the information they know.</p></figcaption>
       </figure>
 
-      <p>The issue of specificity was particularly problematic when selecting a material. A client could select from a list of liner boards of different material colors and thicknesses, but if they only knew that they wanted a white box, they could not simply select "white."</p>
-
-      <p>As a result, clients would either not select a material at all, which required our team to follow up with them, or they would choose a material randomly, which could lead to inaccurate quotes and production issues.</p>
+      <p>The issue of specificity was particularly problematic when selecting a material. A client could select from a list of liner boards of different material colors and thicknesses, but if they only knew that they wanted a white box, they could not simply select "white." As a result, clients would either not select a material at all, which required our team to follow up with them, or they would choose a material randomly, which could lead to inaccurate quotes and production issues.</p>
 
       <p>To solve this, I utilized progressive disclosure to allow clients to select a color, and then if they selected a color, they could optionally choose a material. This change created the flexibility to capture information at all levels of specificity, resulting in more accurate quotes.<p>
 
@@ -437,7 +438,7 @@
 
       <p>With the marketplace launch, we saw a 50% reduction in the average wait time to receive quotes and a 40% reduction in the average time the sales team spent per quote request. While some of our existing clients still expected a more hands-on approach from our sales team, 75% of new clients we onboarded after launching the marketplace were able to complete the entire quoting process without intervention from our team.</p>
 
-      <p>This project represented our biggest step towards scalability at the company to date. For me, this project felt like a culmination of all the work I had done for the company in the years prior, which made the experience even more rewarding. ☺</p>
+      <p>This project represented our biggest step towards scalability at the company to date. For me, this project felt like a culmination of all the work I had done for the company in the years prior, which made the experience even more rewarding. &#x263A;&#xFE0E;</p>
 
     </div>
 
@@ -484,7 +485,7 @@
     <!-- Hide/show index link -->
 
     <script type="text/javascript">
-  
+
       myID = document.getElementById("index-link");
 
       var myScrollFunc = function () {
