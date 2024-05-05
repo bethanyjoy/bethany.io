@@ -100,7 +100,7 @@ main > * + * {
 }
 
 header {
-  margin-block-start: var(--space-m-l);
+  margin-block-start: var(--space-m);
   margin-block-end: var(--space-xl);
 }
 
