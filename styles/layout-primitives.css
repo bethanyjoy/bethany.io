@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: var(--space-m);
+  gap: var(--space-s);
 
   &.center {
     justify-content: center;
@@ -36,7 +36,7 @@
   &.small > * + * {
     margin-block-start: var(--space-xs);
   }
-  
+
 }
 
 /* Switcher */
@@ -47,7 +47,7 @@
   flex-wrap: wrap;
   gap: var(--space-s-2xl);
   align-items: center;
-  
+
 }
 
 
