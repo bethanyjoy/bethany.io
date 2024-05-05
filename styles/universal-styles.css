@@ -131,7 +131,7 @@ main > header {
 /* Header */
 
 nav {
-  gap: var(--space-2xs)!important;
+  gap: var(--space-4xs)!important;
   align-items: baseline;
 }
 
