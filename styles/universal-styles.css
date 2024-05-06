@@ -150,25 +150,23 @@ h1, h2, h3 {
 }*/
 
 p {
-  color: var(--gray-12);
   font-weight: 300;
   line-height: 1.6;
-/*  -webkit-font-smoothing: antialiased;*/
-}
 
-p {
-  &.xlarge, &.large, &.medium {
-    color: unset;
+  &:is(.index *) {
+    font-weight: 400;
+  }
+
+  &.xlarge, &.large, &.medium, &:is(figcaption *) {
     line-height: 1.35;
     letter-spacing: -0.008em; 
   }
+  &:is(figcaption *) {
+    line-height: 1.4;
+  }
+
   &.xlarge {
     font-size: var(--step-3);
-/*    line-height: 145%;*/
-    &:is(.intro > *) {
-      /* font-size: calc(var(--step-3)*1.1); */
-/*      font-weight: 500;*/
-    }
   }
   &.large {
     font-size: var(--step-2);
