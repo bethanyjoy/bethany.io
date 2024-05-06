@@ -1,3 +1,5 @@
+
+
 /* Switcher */
 
 .switcher {
@@ -15,7 +17,7 @@
     min-width: 24ch;
   }
 
-  .thumbnail { 
+  .thumbnail {
     background-color: var(--gray-3);
     aspect-ratio: 1 / 1;
     border-radius: var(--radius-xl);
