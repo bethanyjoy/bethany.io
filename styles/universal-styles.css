@@ -103,6 +103,8 @@ nav {
 .logo {
   /* font-size: 1.0125em; */
   /* font-weight: 500; */
+/*  font-family: 'Logo';*/
+  padding: 0.1em 0.1em 0.1em 0;
 }
 
 @media (width <= 500px) {
