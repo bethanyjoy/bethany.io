@@ -1,35 +1,8 @@
 /* Global styles */
 
-@font-face {
-  font-family: 'Matter';
-  src:  url('../fonts/Matter-Light.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-  font-family: 'Matter';
-  src:  url('../fonts/Matter-Medium.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Beausite';
-  src:  url('../fonts/BeausiteClassicWeb-Clear.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-  font-family: 'Beausite';
-  src:  url('../fonts/BeausiteClassicWeb-Medium.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-}
-
-
 :root {
   font-size: 1rem;
-  font-family: 'Beausite', Inter, system-ui,
+  font-family: 'Beausite', system-ui,
              -apple-system, BlinkMacSystemFont,
              "Segoe UI",
              "Roboto",
@@ -47,10 +20,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
-} */
-
 /* Custom variables */
 
 :root {
@@ -67,10 +36,6 @@
 
 
 /* Set default styles */
-
-/** {
-  box-sizing: border-box;
-}*/
 
 body {
   background-color: var(--background);
@@ -195,6 +160,7 @@ p {
 /*    line-height: 145%;*/
     &:is(.intro > *) {
       /* font-size: calc(var(--step-3)*1.1); */
+/*      font-weight: 500;*/
     }
   }
   &.large {
@@ -245,7 +211,11 @@ a {
   padding: 0.2em 0.5em;
   border-radius: 0.4em;
   transition: background-color 0.25s;
-  &:hover {
+}
+
+/* Only apply hover state on non-touch devices */
+@media (any-hover: hover) {
+  .ghost-button:hover {
     background-color: var(--gray-a3);
   }
 }
@@ -262,7 +232,11 @@ a {
   .hover {
     display: none;
   }
-  &:hover {
+}
+
+/* Only apply hover state on non-touch devices */
+@media (any-hover: hover) {
+  .btn-toggle:hover {
     .default {
       display: none;
     }

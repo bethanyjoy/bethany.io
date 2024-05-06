@@ -1,0 +1,28 @@
+/* Beausite */
+
+@font-face {
+  font-family: 'Beausite';
+  src:  url('../fonts/BeausiteClassicWeb-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'Beausite';
+  src:  url('../fonts/BeausiteClassicWeb-Clear.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'Beausite';
+  src:  url('../fonts/BeausiteClassicWeb-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'Beausite';
+  src:  url('../fonts/BeausiteClassicWeb-Semibold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* Other */
