@@ -123,6 +123,10 @@ h1, h2, h3, h4, h5, strong {
   font-weight: 500;
 }
 
+h1, h2, h3 {
+  letter-spacing: -0.008em; 
+}
+
 .h1, h1 {
   font-size: var(--step-4);
 }
@@ -144,16 +148,17 @@ h1, h2, h3, h4, h5, strong {
 }*/
 
 p {
-/*  color: var(--gray-11);*/
-  font-weight: 400;
+  color: var(--gray-12);
+  font-weight: 300;
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+/*  -webkit-font-smoothing: antialiased;*/
 }
 
 p {
   &.xlarge, &.large, &.medium {
     color: unset;
     line-height: 1.35;
+    letter-spacing: -0.008em; 
   }
   &.xlarge {
     font-size: var(--step-3);
@@ -191,6 +196,7 @@ a {
   color: currentColor;
   transition: text-decoration-color 0.5s;
   cursor: pointer;
+/*  font-weight: 500;*/
 
   &:hover {
     text-decoration-color: currentColor;
@@ -201,6 +207,10 @@ a {
     text-underline-offset: 0.125em;
     text-decoration-thickness: 0.04em;
   }
+
+  /*&:is(header *) {
+    font-weight: 500;
+  }*/
 
 }
 
