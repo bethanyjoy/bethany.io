@@ -1,12 +1,5 @@
 /* Beausite */
 
-/*@font-face {
-  font-family: 'Beausite';
-  src:  url('../fonts/BeausiteClassicWeb-Light.woff2') format('woff2');
-	font-weight: 200;
-	font-style: normal;
-}*/
-
 @font-face {
   font-family: 'Beausite';
   src:  url('../fonts/BeausiteClassicWeb-Clear.woff2') format('woff2');
@@ -35,18 +28,41 @@
 	font-style: normal;
 }
 
+/* Reckless */
+
 /*@font-face {
-  font-family: 'Beausite';
-  src:  url('../fonts/BeausiteClassicWeb-Bold.woff2') format('woff2');
-	font-weight: 700;
+  font-family: 'Reckless';
+  src:  url('../fonts/Reckless/reckless-light-web.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Reckless';
+  src:  url('../fonts/Reckless/reckless-regular-web.woff2') format('woff2');
+	font-weight: 400;
 	font-style: normal;
 }*/
 
-/* Other */
+/* Nib */
 
 /*@font-face {
-  font-family: 'Logo';
-  src:  url('../fonts/VulfSansDemo-Medium.otf') format('opentype');
+  font-family: 'Nib';
+  src:  url('../fonts/Nib/NibPro-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nib';
+  src:  url('../fonts/Nib/NibPro-Regular.woff2') format('woff2');
 	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nib';
+  src:  url('../fonts/Nib/NibPro-SemiBold.woff2') format('woff2');
+	font-weight: 500;
 	font-style: normal;
 }*/

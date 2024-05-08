@@ -22,7 +22,7 @@
     overflow: hidden;
     max-height: 35ch;
 
-    & img {
+    & img.mobile {
       object-position: 0 0;
       object-fit: cover;
       width: 62%;
@@ -30,6 +30,16 @@
       margin: 15% auto 0;
       transition: transform 0.5s;
       max-width: 25ch;
+    }
+
+    & img.desktop {
+      object-position: 0 0;
+      object-fit: cover;
+      width: 132%;
+      height: 132%;
+      margin: 8% 0 0 7%;
+      transition: transform 0.5s;
+/*      max-width: 25ch;*/
     }
 
     &:hover img {

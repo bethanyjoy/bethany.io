@@ -181,16 +181,19 @@
     	margin-block-start: var(--space-xs);
     }
 
+		& p {
+			color: var(--gray-a10);
+			& strong {
+		  color: var(--gray-12)!important;
+			}
+		}
+
 		/* & p:first-child:before {
 	    content: "▲";
 	    color: var(--gray-12);
 	    font-size: 0.8em;
 	    margin: 0 0.5em 0 0.25em;
 		} */
-
-		& p {
-			color: var(--gray-a10);
-		}
 	}
 
 	.gallery {

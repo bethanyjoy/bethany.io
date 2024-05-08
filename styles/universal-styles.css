@@ -177,14 +177,22 @@ p {
   &.small {
     font-size: var(--step--1);
   }
+  /*&.xlarge:is(.index *) {
+    font-size: 2.5rem;
+    font-family: 'Reckless';
+    font-weight: 400;
+    & span {
+      font-family: 'Beausite';
+    }
+  }*/
 }
 
-strong {
+/*strong {
   color: var(--gray-12);
-}
+}*/
 
 ::selection {
-  background: var(--highlight);
+  background: var(--selection);
 }
 
 /* Link styles */
@@ -208,10 +216,22 @@ a {
     text-decoration-thickness: 0.04em;
   }
 
-  /*&:is(header *) {
-    font-weight: 500;
-  }*/
+  &[rel=external].arrow::after {
+    content: " ↗";
+    display: inline-block;
+    text-decoration-line: none;
+    margin-inline-start: 0.25em;
+  }
 
+  &.back {
+    text-underline-offset: 0.25rem;
+    &::before {
+      content: "← ";
+      display: inline-block;
+      text-decoration-line: none;
+      margin-inline-end: 0.25em;
+    }
+  }
 }
 
 /* Ghost button */
@@ -253,24 +273,5 @@ a {
     .hover {
       display: block;
     }
-  }
-}
-
-/* Links */
-
-[rel=external].arrow::after {
-  content: " ↗";
-  display: inline-block;
-  text-decoration-line: none;
-  margin-inline-start: 0.25em;
-}
-
-a.back {
-  text-underline-offset: 0.25rem;
-  &::before {
-    content: "← ";
-    display: inline-block;
-    text-decoration-line: none;
-    margin-inline-end: 0.25em;
   }
 }

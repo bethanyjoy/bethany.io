@@ -155,7 +155,8 @@ body {
   /* Project colors */
   --lumi-thumb: rgb(237, 231, 219);
   --lumi-hero: rgba(237, 231, 219);
-  --scout-thumb: rgb(244, 233, 202);
+/*  --scout-thumb: rgb(244, 233, 202);*/
+  --scout-thumb: #D4D1CC;
   --pop-in-thumb: rgb(224, 232, 210);
 
   /* Case study colors */
@@ -164,7 +165,7 @@ body {
   --dark-bgd: var(--black-a10);
   --border: var(--gray-5);
 
-  --highlight: rgba(255, 214, 0, 0.4);
+  --selection: rgba(255, 214, 0, 0.4);
 }
 
 body.dark-theme {
@@ -178,7 +179,8 @@ body.dark-theme {
   /* Project colors */
   --lumi-thumb: rgb(128, 117, 97);
   --lumi-hero: rgba(128, 117, 97, 0.8);
-  --scout-thumb: rgb(87, 85, 61);
+/*  --scout-thumb: rgb(87, 85, 61);*/
+  --scout-thumb: rgba(192, 187, 178, 0.4);
   --pop-in-thumb: rgb(61, 78, 57);
 
   /* Case study colors */
@@ -187,7 +189,7 @@ body.dark-theme {
   --dark-bgd: var(--white-a1);
   --border: var(--gray-6);
 
-  --highlight: rgba(255, 214, 0, 0.125);
+  --selection: rgba(255, 214, 0, 0.125);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -203,7 +205,8 @@ body.dark-theme {
     /* Project colors */
     --lumi-thumb: rgb(128, 117, 97);
     --lumi-hero: rgba(128, 117, 97, 0.8);
-    --scout-thumb: rgb(87, 85, 61);
+/*    --scout-thumb: rgb(87, 85, 61);*/
+    --scout-thumb: rgba(192, 187, 178, 0.4);
     --pop-in-thumb: rgb(61, 78, 57);
 
     /* Case study colors */
@@ -212,7 +215,7 @@ body.dark-theme {
     --dark-bgd: var(--white-a1);
     --border: var(--gray-6);
 
-    --highlight: rgba(255, 214, 0, 0.125);
+    --selection: rgba(255, 214, 0, 0.125);
   }
 
   body.light-theme {
@@ -223,7 +226,8 @@ body.dark-theme {
     /* Project colors */
     --lumi-thumb: rgb(237, 231, 219);
     --lumi-hero: rgba(237, 231, 219);
-    --scout-thumb: rgb(244, 233, 202);
+/*    --scout-thumb: rgb(244, 233, 202);*/
+    --scout-thumb: #D4D1CC;
     --pop-in-thumb: rgb(224, 232, 210);
 
     /* Case study colors */
@@ -232,6 +236,6 @@ body.dark-theme {
     --dark-bgd: var(--black-a10);
     --border: var(--gray-5);
 
-    --highlight: rgba(255, 214, 0, 0.4);
+    --selection: rgba(255, 214, 0, 0.4);
   }
 }
