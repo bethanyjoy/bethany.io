@@ -21,6 +21,7 @@
     border-radius: var(--radius-xl);
     overflow: hidden;
     max-height: 35ch;
+    position: relative;
 
     & img.mobile {
       object-position: 0 0;
@@ -39,7 +40,19 @@
       height: 110%;
       margin: 8% 0 0 7%;
       transition: transform 0.5s;
-/*      max-width: 25ch;*/
+    }
+
+    &.shadow::after{
+      margin: 8% 0 0 7%;
+      content: '';
+      top: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: block;
+      border-radius: var(--radius-xl);
+      box-shadow: inset -25px -25px 30px rgba(var(--shadow-value), 0.04);
+      border: 1px solid var(--lumi-thumb);
     }
 
     &:hover img {
