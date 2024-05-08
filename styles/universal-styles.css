@@ -167,9 +167,44 @@ p {
 
   &.xlarge {
     font-size: var(--step-3);
+    font-size: 2.9rem;
+/*    font-size: 2.6rem;*/
+/*    font-family: var(--display);*/
+/*    font-weight: 500;*/
+/*    -webkit-font-smoothing: auto;*/
+/*  font-size: 2.8rem;*/
+    & span:not(.symbol) {
+/*      font-family:var(--display);
+      -webkit-font-smoothing: auto;*/
+      background-color: var(--alpha-bgd);
+      padding: 0 0.1em;
+      border-radius: 4px;
+    }
+    & span.symbol {
+      font-family: 'Mabry';
+      margin-left: 0.1em;
+    }
   }
+  /*&.xlarge {
+    font-family: 'Gooper-SC';
+    font-size: 2.9rem;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }*/
+  /*&.xlarge {
+    font-family: 'Reckless';
+    font-size: 3.2rem;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+  }*/
+  /*&.xlarge {
+    font-family: 'Cigars';
+    font-size: 2.7rem;
+    font-weight: 400;
+  }*/
   &.large {
     font-size: var(--step-2);
+/*    font-family: var(--display);*/
   }
   &.medium {
     font-size: var(--step-1);

@@ -28,41 +28,105 @@
 	font-style: normal;
 }
 
-/* Reckless */
+/* Gooper SemiCondensed */
 
-/*@font-face {
-  font-family: 'Reckless';
-  src:  url('../fonts/Reckless/reckless-light-web.woff2') format('woff2');
+@font-face {
+  font-family: 'Gooper-SC';
+  src:  url('../fonts/Gooper-Semicondensed/VCGooperSemiCondensed-Light.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Reckless';
-  src:  url('../fonts/Reckless/reckless-regular-web.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-}*/
-
-/* Nib */
-
-/*@font-face {
-  font-family: 'Nib';
-  src:  url('../fonts/Nib/NibPro-Light.woff2') format('woff2');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nib';
-  src:  url('../fonts/Nib/NibPro-Regular.woff2') format('woff2');
+  font-family: 'Gooper-SC';
+  src:  url('../fonts/Gooper-Semicondensed/VCGooperSemiCondensed-Regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Nib';
-  src:  url('../fonts/Nib/NibPro-SemiBold.woff2') format('woff2');
+  font-family: 'Gooper-SC';
+  src:  url('../fonts/Gooper-Semicondensed/VCGooperSemiCondensed-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
-}*/
+}
+
+@font-face {
+  font-family: 'Gooper-SC';
+  src:  url('../fonts/Gooper-Semicondensed/VCGooperSemiCondensed-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* Cigars */
+
+@font-face {
+  font-family: 'Cigars';
+  src:  url('../fonts/cigars-light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cigars';
+  src:  url('../fonts/cigars-regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Clearface */
+
+
+@font-face {
+  font-family: 'Clearface';
+  src:  url('../fonts/test-fonts/good/clearface.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clearface';
+  src:  url('../fonts/test-fonts/good/ClearfaceStd-Italic.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+  font-family: 'Clearface';
+  src:  url('../fonts/test-fonts/good/clearface-bold.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* Mabry Pro */
+
+
+@font-face {
+  font-family: 'Mabry';
+  src:  url('../fonts/test-fonts/symbols/mabry-light-pro.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mabry';
+  src:  url('../fonts/test-fonts/symbols/mabry-regular-pro.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Display-font';
+  src:  url('../fonts/bradford/BradfordLLWeb-Italic.woff2') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+
+
+
+:root {
+/*	--display: 'Clearface';*/
+	--display: 'Clearface';
+/*	--display: 'Cigars';*/
+}

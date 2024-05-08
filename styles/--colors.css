@@ -184,7 +184,7 @@ body.dark-theme {
   --pop-in-thumb: rgb(61, 78, 57);
 
   /* Case study colors */
-  --alpha-bgd: var(--white-a1);
+  --alpha-bgd: var(--white-a2);
   --gray-bgd: var(--white-a11);
   --dark-bgd: var(--white-a1);
   --border: var(--gray-6);
@@ -210,7 +210,7 @@ body.dark-theme {
     --pop-in-thumb: rgb(61, 78, 57);
 
     /* Case study colors */
-    --alpha-bgd: var(--white-a1);
+    --alpha-bgd: var(--white-a2);
     --gray-bgd: var(--white-a11);
     --dark-bgd: var(--white-a1);
     --border: var(--gray-6);
