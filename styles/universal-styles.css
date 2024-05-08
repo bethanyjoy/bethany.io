@@ -179,6 +179,12 @@ p {
       background-color: var(--alpha-bgd);
       padding: 0 0.1em;
       border-radius: 4px;
+      /*&.delightful {
+        background-color: yellow;
+      }
+      &.intuitive {
+        background-color: blue;
+      }*/
     }
     & span.symbol {
       font-family: 'Mabry';
