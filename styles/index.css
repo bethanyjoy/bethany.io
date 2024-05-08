@@ -35,8 +35,8 @@
     & img.desktop {
       object-position: 0 0;
       object-fit: cover;
-      width: 132%;
-      height: 132%;
+      width: 110%;
+      height: 110%;
       margin: 8% 0 0 7%;
       transition: transform 0.5s;
 /*      max-width: 25ch;*/
