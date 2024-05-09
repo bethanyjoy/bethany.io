@@ -58,6 +58,50 @@
 	font-style: normal;
 }
 
+/* Gooper */
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper/VCGooper-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper/VCGooper-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper/VCGooper-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper/VCGooper-RegularItalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper/VCGooper-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gooper';
+  src:  url('../fonts/Gooper/VCGooper-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+}
+
 /* Cigars */
 
 @font-face {

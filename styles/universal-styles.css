@@ -168,6 +168,7 @@ p {
   &.xlarge {
     font-size: var(--step-3);
     font-size: calc(var(--step-3)*1.15);
+    font-weight: 500;
 /*    font-size: 2.6rem;*/
 /*    font-family: var(--display);*/
 /*    font-weight: 500;*/
@@ -176,21 +177,28 @@ p {
     & span:not(.symbol) {
 /*      font-family:var(--display);*/
 /*      font-family: 'Gooper-SC';*/
+      font-family: 'Gooper';
 /*      -webkit-font-smoothing: auto;*/
       background-color: var(--alpha-bgd);
-      padding: 0 0.05em 0 0.1em;
+/*      padding: 0 0.15em 0 0.2em;*/
+      padding: 0 0.2em 0.06em 0.3em;
       border-radius: 100px;
-      border-radius: 8px;
-      /*&.delightful {
-        background-color: rgba(249, 241, 193, 1);
+      font-weight: 400;
+      font-size: 0.95em;
+/*      border-radius: 8px;*/
+      color:var(--black-a10);
+      &.first {
+        background-color: var(--intro-bgd-1);
+        font-style: italic;
       }
-      &.intuitive {
-        background-color: rgb(218, 232, 237);
-      }*/
+      &.second {
+        background-color: var(--intro-bgd-2);
+      }
     }
     & span.symbol {
       font-family: 'Mabry';
       margin-left: 0.1em;
+      font-style: normal;
     }
   }
   /*&.xlarge {
@@ -212,7 +220,11 @@ p {
   }*/
   &.large {
     font-size: var(--step-2);
+/*    font-weight: 500;*/
 /*    font-family: var(--display);*/
+  }
+  &.large:is(.switcher *) {
+    font-weight: 500;
   }
   &.medium {
     font-size: var(--step-1);

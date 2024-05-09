@@ -146,13 +146,13 @@ img, video {
 
 .hero > .frame, .index .thumbnail, .project-bgd {
   &:is(.lumi *) {
-    background-color: var(--lumi-thumb)!important;
+    background-color: var(--lumi-bgd)!important;
   }
   &:is(.pop-in *) {
-    background-color: var(--pop-in-thumb)!important;
+    background-color: var(--pop-in-bgd)!important;
   }
   &:is(.scout *) {
-    background-color: var(--scout-thumb)!important;
+    background-color: var(--scout-bgd)!important;
   }
 }
 

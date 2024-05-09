@@ -152,13 +152,15 @@ body {
   --background: rgb(255, 255, 255);
   --index-link-bgd: rgba(255, 255, 255, 0.4);
 
+  /* Intro text background colors */
+  --intro-bgd-1: rgb(249, 241, 193);
+  --intro-bgd-2: rgb(218, 232, 237);
+
   /* Project colors */
-  --lumi-thumb: rgb(237, 231, 219);
-  --lumi-hero: rgba(237, 231, 219);
-/*  --scout-thumb: rgb(244, 233, 202);*/
-/*  --scout-thumb: #D4D1CC;*/
- --scout-thumb: #d2dada;
-  --pop-in-thumb: rgb(224, 232, 210);
+  --lumi-bgd: rgb(237, 231, 219);
+  --scout-bgd: rgb(211, 224, 228);
+  --pop-in-bgd: rgb(231, 237, 222);
+
 
   /* Case study colors */
   --alpha-bgd: var(--black-a1);
@@ -171,19 +173,17 @@ body {
 
 body.dark-theme {
 
-   --background: rgb(34, 34, 34);
-    --index-link-bgd: rgba(34, 34, 34, 0.4);
+  --background: rgb(34, 34, 34);
+  --index-link-bgd: rgba(34, 34, 34, 0.4);
 
-    /*--background: rgb(31, 31, 31);
-    --index-link-bgd: rgba(31, 31, 31, 0.4);*/
+  /* Intro text background colors */
+  --intro-bgd-1: rgb(209, 199, 142);
+  --intro-bgd-2: rgb(158, 178, 185);
 
   /* Project colors */
-  --lumi-thumb: rgb(128, 117, 97);
-  --lumi-hero: rgba(128, 117, 97, 0.8);
-/*  --scout-thumb: rgb(87, 85, 61);*/
-/*  --scout-thumb: rgba(192, 187, 178, 0.5);*/
-  --scout-thumb: #d2dada;
-  --pop-in-thumb: rgb(61, 78, 57);
+  --lumi-bgd: rgb(128, 117, 97);
+  --scout-bgd: rgb(136, 160, 168);
+  --pop-in-bgd: rgb(91, 111, 87);
 
   /* Case study colors */
   --alpha-bgd: var(--white-a2);
@@ -198,19 +198,17 @@ body.dark-theme {
   /* Defaults to dark theme */
   body {
 
-   --background: rgb(34, 34, 34);
+    --background: rgb(34, 34, 34);
     --index-link-bgd: rgba(34, 34, 34, 0.4);
 
-    /*--background: rgb(31, 31, 31);
-    --index-link-bgd: rgba(31, 31, 31, 0.4);*/
+    /* Intro text background colors */
+    --intro-bgd-1: rgb(209, 199, 142);
+    --intro-bgd-2: rgb(158, 178, 185);
 
     /* Project colors */
-    --lumi-thumb: rgb(128, 117, 97);
-    --lumi-hero: rgba(128, 117, 97, 0.8);
-/*    --scout-thumb: rgb(87, 85, 61);*/
-/*    --scout-thumb: rgba(192, 187, 178, 0.5);*/
-    --scout-thumb: #d2dada;
-    --pop-in-thumb: rgb(61, 78, 57);
+    --lumi-bgd: rgb(128, 117, 97);
+    --scout-bgd: rgb(136, 160, 168);
+    --pop-in-bgd: rgb(91, 111, 87);
 
     /* Case study colors */
     --alpha-bgd: var(--white-a2);
@@ -226,13 +224,14 @@ body.dark-theme {
     --background: rgb(255, 255, 255);
     --index-link-bgd: rgba(255, 255, 255, 0.4);
 
+    /* Intro text background colors */
+    --intro-bgd-1: rgb(249, 241, 193);
+    --intro-bgd-2: rgb(218, 232, 237);
+
     /* Project colors */
-    --lumi-thumb: rgb(237, 231, 219);
-    --lumi-hero: rgba(237, 231, 219);
-/*    --scout-thumb: rgb(244, 233, 202);*/
-/*    --scout-thumb: #D4D1CC;*/
-    --scout-thumb: #d2dada;
-    --pop-in-thumb: rgb(224, 232, 210);
+    --lumi-bgd: rgb(237, 231, 219);
+    --scout-bgd: rgb(211, 224, 228);
+    --pop-in-bgd: rgb(231, 237, 222);
 
     /* Case study colors */
     --alpha-bgd: var(--black-a1);
