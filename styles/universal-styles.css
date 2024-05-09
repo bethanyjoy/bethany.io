@@ -172,11 +172,11 @@ p {
       border-radius: 100px;
       font-weight: 400;
 
-/*      font-size: 0.95em;
-      padding: 0 0.2em 0.06em 0.3em;*/
-
-      font-size: 0.875em;
+      font-size: 0.95em;
       padding: 0 0.2em 0.06em 0.3em;
+
+/*      font-size: 0.875em;
+      padding: 0 0.2em 0.06em 0.3em;*/
 
       color:var(--black-a10);
       &.first {
