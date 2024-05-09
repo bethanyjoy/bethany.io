@@ -115,18 +115,19 @@
 	font-style: normal;
 }
 
+
+
 @font-face {
   font-family: 'Display-font';
-  src:  url('../fonts/bradford/BradfordLLWeb-Italic.woff2') format('woff');
+  src:  url('../fonts/test-fonts/CandyDarling-Regular-Web.woff2') format('woff');
 	font-weight: 400;
-	font-style: italic;
+	font-style: normal;
 }
 
 
 
 
 :root {
-/*	--display: 'Clearface';*/
 	--display: 'Clearface';
-/*	--display: 'Cigars';*/
+/*	--display: 'Display-font';*/
 }

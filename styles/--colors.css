@@ -156,7 +156,8 @@ body {
   --lumi-thumb: rgb(237, 231, 219);
   --lumi-hero: rgba(237, 231, 219);
 /*  --scout-thumb: rgb(244, 233, 202);*/
-  --scout-thumb: #D4D1CC;
+/*  --scout-thumb: #D4D1CC;*/
+ --scout-thumb: #d2dada;
   --pop-in-thumb: rgb(224, 232, 210);
 
   /* Case study colors */
@@ -180,7 +181,8 @@ body.dark-theme {
   --lumi-thumb: rgb(128, 117, 97);
   --lumi-hero: rgba(128, 117, 97, 0.8);
 /*  --scout-thumb: rgb(87, 85, 61);*/
-  --scout-thumb: rgba(192, 187, 178, 0.5);
+/*  --scout-thumb: rgba(192, 187, 178, 0.5);*/
+  --scout-thumb: #d2dada;
   --pop-in-thumb: rgb(61, 78, 57);
 
   /* Case study colors */
@@ -206,7 +208,8 @@ body.dark-theme {
     --lumi-thumb: rgb(128, 117, 97);
     --lumi-hero: rgba(128, 117, 97, 0.8);
 /*    --scout-thumb: rgb(87, 85, 61);*/
-    --scout-thumb: rgba(192, 187, 178, 0.5);
+/*    --scout-thumb: rgba(192, 187, 178, 0.5);*/
+    --scout-thumb: #d2dada;
     --pop-in-thumb: rgb(61, 78, 57);
 
     /* Case study colors */
@@ -227,7 +230,8 @@ body.dark-theme {
     --lumi-thumb: rgb(237, 231, 219);
     --lumi-hero: rgba(237, 231, 219);
 /*    --scout-thumb: rgb(244, 233, 202);*/
-    --scout-thumb: #D4D1CC;
+/*    --scout-thumb: #D4D1CC;*/
+    --scout-thumb: #d2dada;
     --pop-in-thumb: rgb(224, 232, 210);
 
     /* Case study colors */
