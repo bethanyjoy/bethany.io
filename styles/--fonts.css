@@ -28,118 +28,20 @@
 	font-style: normal;
 }
 
-/* Gooper SemiCondensed */
-
-@font-face {
-  font-family: 'Gooper-SC';
-  src:  url('../fonts/Gooper-Semicondensed/VCGooperSemiCondensed-Light.woff') format('woff');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gooper-SC';
-  src:  url('../fonts/Gooper-Semicondensed/VCGooperSemiCondensed-Regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gooper-SC';
-  src:  url('../fonts/Gooper-Semicondensed/VCGooperSemiCondensed-Medium.woff') format('woff');
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gooper-SC';
-  src:  url('../fonts/Gooper-Semicondensed/VCGooperSemiCondensed-SemiBold.woff') format('woff');
-	font-weight: 600;
-	font-style: normal;
-}
-
 /* Gooper */
 
 @font-face {
   font-family: 'Gooper';
-  src:  url('../fonts/Gooper/VCGooper-Light.woff') format('woff');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gooper';
-  src:  url('../fonts/Gooper/VCGooper-LightItalic.woff') format('woff');
-	font-weight: 300;
-	font-style: italic;
-}
-
-@font-face {
-  font-family: 'Gooper';
-  src:  url('../fonts/Gooper/VCGooper-Regular.woff') format('woff');
+  src:  url('../fonts/VCGooper-Regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
   font-family: 'Gooper';
-  src:  url('../fonts/Gooper/VCGooper-RegularItalic.woff') format('woff');
+  src:  url('../fonts/VCGooper-RegularItalic.woff') format('woff');
 	font-weight: 400;
 	font-style: italic;
-}
-
-@font-face {
-  font-family: 'Gooper';
-  src:  url('../fonts/Gooper/VCGooper-Medium.woff') format('woff');
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gooper';
-  src:  url('../fonts/Gooper/VCGooper-MediumItalic.woff') format('woff');
-	font-weight: 500;
-	font-style: italic;
-}
-
-/* Cigars */
-
-@font-face {
-  font-family: 'Cigars';
-  src:  url('../fonts/cigars-light.woff') format('woff');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cigars';
-  src:  url('../fonts/cigars-regular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-}
-
-/* Clearface */
-
-
-@font-face {
-  font-family: 'Clearface';
-  src:  url('../fonts/test-fonts/good/clearface.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Clearface';
-  src:  url('../fonts/test-fonts/good/ClearfaceStd-Italic.otf') format('opentype');
-	font-weight: 400;
-	font-style: italic;
-}
-
-@font-face {
-  font-family: 'Clearface';
-  src:  url('../fonts/test-fonts/good/clearface-bold.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
 }
 
 /* Mabry Pro */
@@ -147,31 +49,14 @@
 
 @font-face {
   font-family: 'Mabry';
-  src:  url('../fonts/test-fonts/symbols/mabry-light-pro.woff2') format('woff2');
+  src:  url('../fonts/mabry-light-pro.woff2') format('woff2');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
   font-family: 'Mabry';
-  src:  url('../fonts/test-fonts/symbols/mabry-regular-pro.woff2') format('woff2');
+  src:  url('../fonts/mabry-regular-pro.woff2') format('woff2');
 	font-weight: 400;
 	font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: 'Display-font';
-  src:  url('../fonts/test-fonts/CandyDarling-Regular-Web.woff2') format('woff');
-	font-weight: 400;
-	font-style: normal;
-}
-
-
-
-
-:root {
-	--display: 'Clearface';
-/*	--display: 'Display-font';*/
 }
