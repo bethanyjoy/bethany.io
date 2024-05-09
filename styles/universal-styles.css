@@ -181,7 +181,7 @@ p {
       color:var(--black-a10);
       &.first {
         background-color: var(--intro-bgd-1);
-        font-style: italic;
+/*        font-style: italic;*/
       }
       &.second {
         background-color: var(--intro-bgd-2);
