@@ -26,7 +26,7 @@
 
   /* Layout & spacing */
   --measure: 800px;
-  --gutter: var(--space-m-l);
+  --gutter: var(--space-m);
 
   /* Colors */
   --shadow-value: 0, 0, 0;
@@ -167,7 +167,7 @@ p {
 
   &.xlarge {
     font-size: var(--step-3);
-    font-size: 2.9rem;
+    font-size: calc(var(--step-3)*1.15);
 /*    font-size: 2.6rem;*/
 /*    font-family: var(--display);*/
 /*    font-weight: 500;*/
@@ -175,18 +175,18 @@ p {
 /*  font-size: 2.8rem;*/
     & span:not(.symbol) {
 /*      font-family:var(--display);*/
-      font-family: 'Gooper-SC';
+/*      font-family: 'Gooper-SC';*/
 /*      -webkit-font-smoothing: auto;*/
       background-color: var(--alpha-bgd);
       padding: 0 0.05em 0 0.1em;
       border-radius: 100px;
       border-radius: 8px;
-      &.delightful {
+      /*&.delightful {
         background-color: rgba(249, 241, 193, 1);
       }
       &.intuitive {
         background-color: rgb(218, 232, 237);
-      }
+      }*/
     }
     & span.symbol {
       font-family: 'Mabry';
