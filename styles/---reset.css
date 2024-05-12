@@ -71,7 +71,12 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* Remove body margin */
+
+
+
+
+/* Custom reset styles */
+
 body {
   margin: 0;
 }

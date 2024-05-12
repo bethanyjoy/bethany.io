@@ -159,7 +159,7 @@ body {
   /* Project colors */
   --lumi-bgd: rgb(237, 231, 219);
   --scout-bgd: rgb(211, 224, 228);
-  --pop-in-bgd: rgb(231, 237, 222);
+  --pop-in-bgd: rgb(218, 228, 203);
 
 
   /* Case study colors */
@@ -231,7 +231,7 @@ body.dark-theme {
     /* Project colors */
     --lumi-bgd: rgb(237, 231, 219);
     --scout-bgd: rgb(211, 224, 228);
-    --pop-in-bgd: rgb(231, 237, 222);
+    --pop-in-bgd: rgb(218, 228, 203);
 
     /* Case study colors */
     --alpha-bgd: var(--black-a1);
