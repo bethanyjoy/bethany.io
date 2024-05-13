@@ -159,8 +159,14 @@ body {
   /* Project colors */
   --lumi-bgd: rgb(237, 231, 219);
   --scout-bgd: rgb(211, 224, 228);
-  --pop-in-bgd: rgb(218, 228, 203);
-
+/*  --pop-in-bgd: rgb(218, 228, 203);*/
+/*  --pop-in-bgd: rgb(204, 221, 213);*/
+/*  --pop-in-bgd: rgb(219, 232, 226);*/
+/*--pop-in-bgd: rgb(223, 230, 215);*/
+/*--pop-in-bgd: rgb(225, 233, 215);*/
+/*--pop-in-bgd: rgb(214, 223, 203);*/
+/*--pop-in-bgd: rgb(213, 226, 204);*/
+--pop-in-bgd: rgb(215, 226, 208);
 
   /* Case study colors */
   --alpha-bgd: var(--black-a1);
@@ -231,7 +237,7 @@ body.dark-theme {
     /* Project colors */
     --lumi-bgd: rgb(237, 231, 219);
     --scout-bgd: rgb(211, 224, 228);
-    --pop-in-bgd: rgb(218, 228, 203);
+    --pop-in-bgd: rgb(225, 233, 215);
 
     /* Case study colors */
     --alpha-bgd: var(--black-a1);
