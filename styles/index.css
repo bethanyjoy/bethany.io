@@ -54,10 +54,6 @@
       box-shadow: inset -25px -25px 30px rgba(var(--shadow-value), 0.04);
       border: 1px solid var(--lumi-thumb);
     }
-
-    /*&:hover img {
-      transform: translateY(-1%) scale(101%);
-    }*/
   }
 }
 
@@ -98,8 +94,10 @@
       31px 27px 80px rgba(var(--shadow-value), 0.07)
     ;
   }
+}
 
-  &:hover {
+@media (any-hover:hover) {
+  .mobile:hover {
     transform: translateY(-1%) scale(101%);
   }
 }

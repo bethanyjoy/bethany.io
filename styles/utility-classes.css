@@ -56,7 +56,10 @@
 .hide-ul {
   text-decoration: none;
   transition: none;
-  &:hover {
+}
+
+@media (any-hover: hover) {
+  .hide-ul:hover {
     text-decoration: underline;
   }
 }
