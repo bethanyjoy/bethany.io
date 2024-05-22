@@ -105,6 +105,7 @@ nav {
   /* font-weight: 500; */
 /*  font-family: 'Logo';*/
   padding: 0.1em 0.1em 0.1em 0;
+  line-height: 1.2em;
 }
 
 @media (width <= 500px) {
@@ -166,30 +167,31 @@ p {
     font-size: calc(var(--step-3)*1.15);
     font-weight: 500;
 /*    line-height: 1.4;*/
-    & span:not(.symbol) {
+    /* & span:not(.symbol) {
       font-family: 'Gooper';
       background-color: var(--alpha-bgd);
       border-radius: 100px;
       font-weight: 400;
-
       font-size: 0.95em;
       padding: 0 0.2em 0.06em 0.3em;
-
-/*      font-size: 0.875em;
-      padding: 0 0.2em 0.06em 0.3em;*/
-
-      color:var(--black-a10);
+      color:var(--black-a10); */
+    & span:not(.symbol) {
+      /* background-color: var(--alpha-bgd);
+      border-radius: 0.25rem;; */
+      /* padding: 0 0.2em 0.06em 0.3em; */
+      /* color:var(--black-a10); */
       &.first {
-        background-color: var(--intro-bgd-1);
+        /* background-color: var(--intro-bgd-1); */
 /*        font-style: italic;*/
       }
       &.second {
-        background-color: var(--intro-bgd-2);
+        /* background-color: var(--intro-bgd-2); */
       }
     }
     & span.symbol {
       font-family: 'Mabry';
-      margin-left: 0.1em;
+      /* margin-left: 0.1em; */
+      margin-left: 0.13em;
       font-style: normal;
     }
   }

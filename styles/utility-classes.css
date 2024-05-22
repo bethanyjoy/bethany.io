@@ -145,6 +145,16 @@ img, video {
 }
 
 
+.hidden-small-screens {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .hidden-small-screens {
+    display: none;
+  }
+}
+
 /* Color backgrounds */
 
 .hero > .frame, .index .thumbnail, .project-bgd {
