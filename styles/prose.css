@@ -139,7 +139,8 @@
 			&.mobile {
 				> div {
 			  	position: relative;
-				  aspect-ratio: 405 / 842 !important;
+				  /* aspect-ratio: 405 / 842 !important; */
+				  aspect-ratio: 405 / 849 !important;
 			  }
 
 				/* Style device frame */
@@ -157,10 +158,13 @@
 			  .screen {
 			  	z-index: 900;
 				  margin: 1.1%;
-				  padding: 2.1%;
+				  padding: 1.7%;
+				  /* padding: 1.6%; */
 				  width: 97.9%;
+				  /* height: 99%; */
 				  aspect-ratio: 395 / 832 !important;
-				  border-radius: 16% / 8%;
+				  /* border-radius: 16% / 8%; */
+				  border-radius: 17% / 9%;
 			  }
 			}
 		}

@@ -238,6 +238,13 @@ a {
     margin-inline-start: 0.25em;
   }
 
+  &[rel=external].symbol::before {
+    content: "🔗 ";
+    display: inline-block;
+    text-decoration-line: none;
+    margin-inline-end: 0.25em;
+  }
+
   &.back {
     text-underline-offset: 0.25rem;
     &::before {
