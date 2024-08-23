@@ -167,6 +167,9 @@ img, video {
   &:is(.scout *) {
     background-color: var(--scout-bgd)!important;
   }
+  &:is(.sweeper *) {
+    background-color: var(--sweeper-bgd)!important;
+  }
 }
 
 .dark {

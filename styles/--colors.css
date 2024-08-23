@@ -167,6 +167,10 @@ body {
 /*--pop-in-bgd: rgb(214, 223, 203);*/
 /*--pop-in-bgd: rgb(213, 226, 204);*/
 --pop-in-bgd: rgb(215, 226, 208);
+/* --sweeper-bgd: rgb(235, 228, 187); */
+--sweeper-bgd: rgb(240 236 229);
+/* --sweeper-bgd: rgb(238, 229, 198); */
+
 
   /* Case study colors */
   --alpha-bgd: var(--black-a1);
@@ -190,6 +194,10 @@ body.dark-theme {
   --lumi-bgd: rgb(128, 117, 97);
   --scout-bgd: rgb(136, 160, 168);
   --pop-in-bgd: rgb(91, 111, 87);
+  /* --sweeper-bgd: rgb(164, 156, 114); */
+  /* --sweeper-bgd: rgb(60 59 55); */
+  --sweeper-bgd: rgb(68 66 61);
+
 
   /* Case study colors */
   --alpha-bgd: var(--white-a2);
@@ -215,6 +223,10 @@ body.dark-theme {
     --lumi-bgd: rgb(128, 117, 97);
     --scout-bgd: rgb(136, 160, 168);
     --pop-in-bgd: rgb(91, 111, 87);
+    /* --sweeper-bgd: rgb(164, 156, 114); */
+    /* --sweeper-bgd: rgb(60 59 55); */
+    --sweeper-bgd: rgb(68 66 61);
+
 
     /* Case study colors */
     --alpha-bgd: var(--white-a2);
@@ -238,6 +250,9 @@ body.dark-theme {
     --lumi-bgd: rgb(237, 231, 219);
     --scout-bgd: rgb(211, 224, 228);
     --pop-in-bgd: rgb(225, 233, 215);
+    /* --sweeper-bgd: rgb(235, 228, 187); */
+    --sweeper-bgd: rgb(240 236 229);
+
 
     /* Case study colors */
     --alpha-bgd: var(--black-a1);
