@@ -238,14 +238,27 @@
 
 			> dd {
 				flex: 1;
-				min-inline-size: 400px;
+				/* min-inline-size: 400px; */
 				font-weight: 400;
-			  -webkit-font-smoothing: antialiased;
-/*			  color: var(--gray-11);*/
+				-webkit-font-smoothing: antialiased;
+	/*			color: var(--gray-11);*/
 			}
 		}
 	}
 }
+
+
+/* Change details box direction on mobile */
+
+@media (width < 600px) {
+	& dl.details {
+		> div {
+			flex-direction: column;
+		}
+	}
+}
+
+
 
 /* Make full width image corners not rounded once @ full width of screen */
 
