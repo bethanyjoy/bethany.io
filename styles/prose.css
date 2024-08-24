@@ -267,3 +267,11 @@
     columns:1
   }
 }
+
+/* Hide embedded prototypes on mobile */
+
+@media (width <= 600px) {
+	.prototype {
+		display: none;
+	}
+}
