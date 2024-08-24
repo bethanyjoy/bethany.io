@@ -252,6 +252,7 @@
 
 @media (width < 600px) {
 	& dl.details {
+		/* padding: var(--space-s); */
 		> div {
 			flex-direction: column;
 		}
