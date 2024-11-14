@@ -81,9 +81,9 @@
 
 	& figure {
 
-		& img, & video, .frame {
+		& img, & video, .frame, .prototype {
 			width: 100%;
-	    margin-inline: auto;
+	    	margin-inline: auto;
 		}
 
 		& img:not(.frame *), & video:not(.frame *), .frame {
