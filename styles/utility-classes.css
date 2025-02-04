@@ -177,13 +177,18 @@ img, video {
 }
 
 .blue {
-  background-color: #C3CDD0!important
+  background-color: #C3CDD0!important;
 }
 
 .purple {
-  background-color: #C4B1C8!important
+  background-color: #C4B1C8!important;
 }
 
 .green {
-  background-color: #CDD4BF!important
+  background-color: #CDD4BF!important;
+}
+
+.brown {
+  /* background-color: rgb(198, 192, 182)!important; */
+  background-color: rgb(226, 220, 208)!important;
 }
