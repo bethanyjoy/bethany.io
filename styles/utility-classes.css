@@ -170,6 +170,9 @@ img, video {
   &:is(.sweeper *) {
     background-color: var(--sweeper-bgd)!important;
   }
+  &:is(.pallet *) {
+    background-color: var(--pallet-bgd)!important;
+  }
 }
 
 .dark {

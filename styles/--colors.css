@@ -168,8 +168,9 @@ body {
 /*--pop-in-bgd: rgb(213, 226, 204);*/
 --pop-in-bgd: rgb(215, 226, 208);
 /* --sweeper-bgd: rgb(235, 228, 187); */
---sweeper-bgd: rgb(240 236 229);
+--sweeper-bgd: rgb(240, 236, 229);
 /* --sweeper-bgd: rgb(238, 229, 198); */
+--pallet-bgd: rgb(234, 235, 236);
 
 
   /* Case study colors */
@@ -196,7 +197,8 @@ body.dark-theme {
   --pop-in-bgd: rgb(91, 111, 87);
   /* --sweeper-bgd: rgb(164, 156, 114); */
   /* --sweeper-bgd: rgb(60 59 55); */
-  --sweeper-bgd: rgb(68 66 61);
+  --sweeper-bgd: rgb(68, 66 ,61);
+  --pallet-bgd: rgba(234, 235, 236, 0.3);
 
 
   /* Case study colors */
@@ -225,7 +227,8 @@ body.dark-theme {
     --pop-in-bgd: rgb(91, 111, 87);
     /* --sweeper-bgd: rgb(164, 156, 114); */
     /* --sweeper-bgd: rgb(60 59 55); */
-    --sweeper-bgd: rgb(68 66 61);
+    --sweeper-bgd: rgb(68, 66, 61);
+    --pallet-bgd: rgba(234, 235, 236, 0.3);
 
 
     /* Case study colors */
@@ -251,7 +254,8 @@ body.dark-theme {
     --scout-bgd: rgb(211, 224, 228);
     --pop-in-bgd: rgb(225, 233, 215);
     /* --sweeper-bgd: rgb(235, 228, 187); */
-    --sweeper-bgd: rgb(240 236 229);
+    --sweeper-bgd: rgb(240, 236, 229);
+    --pallet-bgd: rgb(234, 235, 236);
 
 
     /* Case study colors */
